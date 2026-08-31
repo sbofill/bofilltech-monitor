@@ -2,7 +2,7 @@
 
 Visual + uptime monitoring for Bofill Technologies client websites.
 
-**Dashboard:** https://sbofill.github.io/bofilltech-monitor/
+**Dashboard:** https://bofilltech.github.io/bofilltech-monitor/
 
 ## How it works
 - GitHub Actions runs `monitor/check.mjs` hourly (`.github/workflows/monitor.yml` — see One-time activation below).

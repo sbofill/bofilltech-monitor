@@ -191,7 +191,7 @@ if (transitions.length) {
       from: `"VisualMonitor" <${SMTP_USER.includes('@') ? SMTP_USER : ALERT_TO}>`,
       to: ALERT_TO,
       subject: `[VisualMonitor] ${worst}: ${transitions.map(t => t.name).join(', ')}`,
-      text: `${lines}\n\nDashboard: https://sbofill.github.io/bofilltech-monitor/\n${new Date().toISOString()}`,
+      text: `${lines}\n\nDashboard: https://bofilltech.github.io/bofilltech-monitor/\n${new Date().toISOString()}`,
     });
     console.log('Alert email sent.');
   } else {
