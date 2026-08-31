@@ -1,0 +1,45 @@
+{
+  "settings": {
+    "timeout_ms": 20000,
+    "slow_ms": 8000,
+    "visual_diff_warn_pct": 25,
+    "screenshot_width": 1280,
+    "screenshot_height": 800
+  },
+  "sites": [
+    {
+      "slug": "bofilltech",
+      "name": "Bofill Technologies",
+      "url": "https://bofilltech.com"
+    },
+    {
+      "slug": "jostvandyke",
+      "name": "White Bay Villas",
+      "url": "https://www.jostvandyke.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "oceanvista",
+      "name": "Ocean Vista Resort",
+      "url": "https://oceanvistaresort.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "yorkharborinn",
+      "name": "York Harbor Inn",
+      "url": "https://www.yorkharborinn.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "oshucks",
+      "name": "O Shucks Catering",
+      "url": "https://oshuckscatering.com"
+    },
+    {
+      "slug": "dunecrest",
+      "name": "Dune Crest Hotel",
+      "url": "https://dunecresthotel.com",
+      "visual_warn_pct": 40
+    }
+  ]
+}

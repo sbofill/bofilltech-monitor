@@ -1,0 +1,54 @@
+name: monitor
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # hourly
+  workflow_dispatch:
+    inputs:
+      reset_baselines:
+        description: 'Reset screenshot baselines to current state'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install deps
+        working-directory: monitor
+        run: npm install --no-audit --no-fund
+
+      - name: Run checks
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          ALERT_TO: ${{ secrets.ALERT_TO }}
+        run: |
+          FLAGS=""
+          if [ "${{ inputs.reset_baselines }}" = "true" ]; then FLAGS="--reset-baselines"; fi
+          node monitor/check.mjs $FLAGS
+
+      - name: Commit results
+        run: |
+          git config user.name "visualmonitor-bot"
+          git config user.email "steve@bofilltech.com"
+          git add data/ shots/
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "monitor: $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git pull --rebase origin main
+          git push

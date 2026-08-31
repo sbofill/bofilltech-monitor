@@ -8,60 +8,45 @@
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f3f4f6; }
 
-    /* Status badge */
     .badge-live    { background: #16a34a; color: #fff; }
     .badge-warning { background: #d97706; color: #fff; }
     .badge-down    { background: #dc2626; color: #fff; }
 
-    /* Card hover */
     .site-card { transition: box-shadow .15s, transform .15s; }
     .site-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,.12); transform: translateY(-2px); }
 
-    /* Screenshot area */
-    .screenshot-area { height: 170px; overflow: hidden; position: relative; }
+    .screenshot-area { height: 170px; overflow: hidden; position: relative; background: #f8fafc; }
     .screenshot-area img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
     .screenshot-placeholder { display: flex; align-items: center; justify-content: center; height: 100%; }
 
-    /* Down card tint */
     .card-down .screenshot-placeholder { background: #fee2e2; }
     .card-warning .screenshot-placeholder { background: #fff7ed; }
     .card-live .screenshot-placeholder { background: #f0f9ff; }
+    .card-down { outline: 2px solid #fecaca; }
 
-    /* Live dot pulse */
     @keyframes livePulse { 0%,100% { opacity: 1; } 50% { opacity: .4; } }
     .dot-live-anim { animation: livePulse 2s ease-in-out infinite; }
+    @media (prefers-reduced-motion: reduce) { .dot-live-anim, .spinner { animation: none; } }
 
-    /* Stat card */
-    .stat-card { border-radius: 12px; }
-
-    /* Spinner */
     @keyframes spin { to { transform: rotate(360deg); } }
     .spinner { animation: spin .8s linear infinite; }
 
-    /* Tooltip */
     .tooltip-wrap { position: relative; }
     .tooltip-text { visibility: hidden; background: #1f2937; color: #fff; font-size: 11px; padding: 4px 8px;
       border-radius: 6px; position: absolute; top: calc(100% + 6px); left: 50%; transform: translateX(-50%);
       white-space: nowrap; z-index: 50; pointer-events: none; }
     .tooltip-wrap:hover .tooltip-text { visibility: visible; }
 
-    /* Scrollbar */
     ::-webkit-scrollbar { width: 6px; } ::-webkit-scrollbar-track { background: #f1f1f1; }
     ::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
 
-    /* Setup overlay */
-    #setup-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 100;
-      align-items: center; justify-content: center; }
+    .sparkline span { display:inline-block; width:4px; margin-right:2px; border-radius:1px 1px 0 0; vertical-align: bottom; }
   </style>
 </head>
 <body class="min-h-screen">
 
-<!-- ═══════════════════════════════════════════
-     HEADER
-═══════════════════════════════════════════ -->
 <header class="bg-white border-b border-gray-200 sticky top-0 z-40">
   <div class="max-w-screen-xl mx-auto px-6 py-3 flex items-center justify-between">
-    <!-- Logo -->
     <div class="flex items-center gap-3">
       <div class="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center shadow-sm">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -70,35 +55,169 @@
       </div>
       <div>
         <div class="font-bold text-gray-900 leading-tight text-base">VisualMonitor</div>
-        <div class="text-xs text-gray-400 leading-tight">AI-Powered Uptime Tracking</div>
+        <div class="text-xs text-gray-400 leading-tight">Bofill Technologies</div>
       </div>
     </div>
-    <!-- Right -->
     <div class="flex items-center gap-3">
-      <!-- Last updated -->
       <span id="last-updated" class="text-xs text-gray-400 hidden sm:block"></span>
-      <!-- Refresh button -->
-      <button id="refresh-btn" onclick="loadData()" class="tooltip-wrap w-8 h-8 rounded-full hover:bg-gray-100 flex items-center justify-center text-gray-500" title="Refresh">
+      <button id="refresh-btn" onclick="loadData()" class="tooltip-wrap w-8 h-8 rounded-full hover:bg-gray-100 flex items-center justify-center text-gray-500">
         <svg id="refresh-icon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/>
           <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
         </svg>
         <span class="tooltip-text">Refresh now</span>
       </button>
-      <!-- Bell -->
-      <button class="w-8 h-8 rounded-full hover:bg-gray-100 flex items-center justify-center text-gray-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
-        </svg>
-      </button>
-      <!-- Settings -->
-      <button onclick="toggleSetup()" class="w-8 h-8 rounded-full hover:bg-gray-100 flex items-center justify-center text-gray-500">
+      <a href="https://github.com/sbofill/bofilltech-monitor/edit/main/sites.json" target="_blank" rel="noopener"
+         class="tooltip-wrap w-8 h-8 rounded-full hover:bg-gray-100 flex items-center justify-center text-gray-500">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
         </svg>
-      </button>
-      <!-- Avatar -->
+        <span class="tooltip-text">Edit site list</span>
+      </a>
       <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold">BT</div>
     </div>
   </div>
 </header>
+
+<main class="max-w-screen-xl mx-auto px-6 py-6">
+
+  <!-- Stats -->
+  <div id="stats" class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6"></div>
+
+  <!-- Problems first -->
+  <div id="alert-strip" class="hidden mb-6 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800"></div>
+
+  <!-- Cards -->
+  <div id="grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+
+  <div id="empty" class="hidden text-center py-24 text-gray-500">
+    <p class="font-medium text-gray-700 mb-1">No check data yet</p>
+    <p class="text-sm">The monitor runs hourly. Trigger the first run from the repo's Actions tab, then refresh.</p>
+  </div>
+
+  <p class="text-xs text-gray-400 mt-10 text-center">
+    Checks run hourly via GitHub Actions · screenshots compared against a saved baseline ·
+    <a class="underline hover:text-gray-600" href="https://github.com/sbofill/bofilltech-monitor" target="_blank" rel="noopener">repo</a>
+  </p>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const BADGE = { live: 'badge-live', warning: 'badge-warning', down: 'badge-down' };
+const LABEL = { live: 'Live', warning: 'Warning', down: 'Down' };
+
+function ago(iso) {
+  const s = (Date.now() - new Date(iso).getTime()) / 1000;
+  if (s < 90) return 'just now';
+  if (s < 3600) return Math.round(s / 60) + ' min ago';
+  if (s < 86400) return Math.round(s / 3600) + ' hr ago';
+  return Math.round(s / 86400) + ' d ago';
+}
+
+function statCard(label, value, color) {
+  return `<div class="stat-card bg-white border border-gray-200 rounded-xl px-4 py-3">
+    <div class="text-2xl font-bold ${color}">${value}</div>
+    <div class="text-xs text-gray-500 mt-0.5">${label}</div>
+  </div>`;
+}
+
+function sparkline(hist) {
+  if (!hist || !hist.length) return '<span></span>';
+  const bars = hist.slice(-48).map(h => {
+    const color = h.s === 'down' ? '#dc2626' : h.s === 'warning' ? '#d97706' : '#16a34a';
+    const ht = h.s === 'down' ? 6 : Math.max(4, Math.min(18, 18 - h.ms / 500));
+    return `<span style="height:${ht}px;background:${color}" title="${h.s} · ${h.ms}ms"></span>`;
+  }).join('');
+  return `<div class="sparkline leading-none" aria-label="last 48 checks">${bars}</div>`;
+}
+
+function card(site, hist) {
+  const dot = site.status === 'live'
+    ? '<span class="w-2 h-2 rounded-full bg-green-500 dot-live-anim inline-block shrink-0"></span>' : '';
+  const shot = site.status === 'down'
+    ? `<div class="screenshot-placeholder"><span class="text-sm text-red-700 font-medium">Site unreachable</span></div>`
+    : `<img src="shots/${esc(site.slug)}.png?t=${Date.now()}" alt="Latest screenshot of ${esc(site.name)}" loading="lazy"
+         onerror="this.parentElement.innerHTML='<div class=&quot;screenshot-placeholder&quot;><span class=&quot;text-sm text-gray-400&quot;>Screenshot pending first run</span></div>'">`;
+  const issues = site.issues?.length
+    ? `<div class="px-4 pb-3 text-xs ${site.status === 'down' ? 'text-red-700' : 'text-amber-700'}">${site.issues.map(esc).join(' · ')}</div>` : '';
+  const diff = site.visual && !site.visual.baseline_reset
+    ? `<span class="tooltip-wrap">${site.visual.diff_pct}% visual diff<span class="tooltip-text">vs saved baseline screenshot</span></span>` : '';
+
+  return `<div class="site-card card-${site.status} bg-white rounded-xl border border-gray-200 overflow-hidden">
+    <div class="screenshot-area">${shot}
+      <span class="absolute top-2 right-2 text-[11px] font-semibold px-2 py-0.5 rounded-full ${BADGE[site.status]}">${LABEL[site.status]}</span>
+    </div>
+    <div class="px-4 pt-3 pb-1 flex items-start justify-between gap-2">
+      <div class="min-w-0">
+        <div class="font-semibold text-gray-900 text-sm flex items-center gap-2 truncate">${dot}${esc(site.name)}</div>
+        <a href="${esc(site.url)}" target="_blank" rel="noopener" class="text-xs text-blue-600 hover:underline truncate block">${esc(site.url.replace(/^https?:\/\//, ''))}</a>
+      </div>
+      <div class="text-right shrink-0">
+        <div class="text-sm font-semibold text-gray-800">${site.ms ? (site.ms / 1000).toFixed(1) + 's' : '—'}</div>
+        <div class="text-[11px] text-gray-400">response</div>
+      </div>
+    </div>
+    ${issues}
+    <div class="px-4 pb-3 pt-1 flex items-end justify-between gap-3">
+      ${sparkline(hist)}
+      <div class="text-[11px] text-gray-400 text-right">
+        ${site.uptime_pct != null ? site.uptime_pct + '% uptime · ' : ''}${diff ? diff + ' · ' : ''}checked ${ago(site.checked_at)}
+      </div>
+    </div>
+  </div>`;
+}
+
+async function loadData() {
+  $('refresh-icon').classList.add('spinner');
+  try {
+    const [statusRes, histRes] = await Promise.all([
+      fetch('data/status.json?t=' + Date.now()),
+      fetch('data/history.json?t=' + Date.now()).catch(() => null),
+    ]);
+    if (!statusRes.ok) throw new Error('no data');
+    const data = await statusRes.json();
+    const history = histRes && histRes.ok ? await histRes.json() : {};
+
+    const sites = Object.values(data.sites);
+    const order = { down: 0, warning: 1, live: 2 };
+    sites.sort((a, b) => order[a.status] - order[b.status] || a.name.localeCompare(b.name));
+
+    const live = sites.filter(s => s.status === 'live').length;
+    const warn = sites.filter(s => s.status === 'warning').length;
+    const down = sites.filter(s => s.status === 'down').length;
+    const timed = sites.filter(s => s.ms);
+    const avg = timed.reduce((a, s) => a + s.ms, 0) / Math.max(1, timed.length);
+
+    $('stats').innerHTML =
+      statCard('Sites monitored', sites.length, 'text-gray-900') +
+      statCard('Live', live, 'text-green-600') +
+      statCard('Warnings', warn, warn ? 'text-amber-600' : 'text-gray-300') +
+      statCard('Down', down, down ? 'text-red-600' : 'text-gray-300');
+
+    const bad = sites.filter(s => s.status !== 'live');
+    if (bad.length) {
+      $('alert-strip').classList.remove('hidden');
+      $('alert-strip').innerHTML = '<strong>Needs attention:</strong> ' +
+        bad.map(s => `${esc(s.name)} (${s.issues.map(esc).join('; ') || s.status})`).join(' · ');
+    } else {
+      $('alert-strip').classList.add('hidden');
+    }
+
+    $('grid').innerHTML = sites.map(s => card(s, history[s.slug])).join('');
+    $('empty').classList.add('hidden');
+    $('last-updated').textContent = 'Last check ' + ago(data.generated_at) +
+      ' · avg response ' + (avg / 1000).toFixed(1) + 's';
+  } catch {
+    $('grid').innerHTML = '';
+    $('stats').innerHTML = '';
+    $('empty').classList.remove('hidden');
+  }
+  $('refresh-icon').classList.remove('spinner');
+}
+
+loadData();
+setInterval(loadData, 5 * 60 * 1000);
+</script>
+</body>
+</html>
