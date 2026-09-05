@@ -5,7 +5,7 @@ Visual + uptime monitoring for Bofill Technologies client websites.
 **Dashboard:** https://bofilltech.github.io/bofilltech-monitor/
 
 ## How it works
-- GitHub Actions runs `monitor/check.mjs` hourly (`.github/workflows/monitor.yml` — see One-time activation below).
+- GitHub Actions runs `monitor/check.mjs` hourly. HTTP checks hit ALL sites every run (10 concurrent). Screenshots rotate in batches of 40 per run (4 concurrent pages), so every site gets a fresh visual diff roughly every 6 hours; a persisted cursor in `data/shot_cursor.json` tracks the rotation. Hourly (`.github/workflows/monitor.yml` — see One-time activation below).
 - Each site gets an HTTP check (status code, response time, WordPress error strings, near-empty body) and a Puppeteer screenshot compared against a saved baseline with pixelmatch.
 - Results are committed to `data/status.json` + `data/history.json`; screenshots to `shots/` (baselines in `shots/baseline/`). The dashboard is a static page reading those files via GitHub Pages.
 - On any status transition (live → warning/down, or recovery) an email alert is sent through SMTP.
@@ -14,6 +14,8 @@ Visual + uptime monitoring for Bofill Technologies client websites.
 - **Down** — network error, timeout, or HTTP 5xx
 - **Warning** — HTTP 4xx, WP fatal/db error string in body, near-empty body, slow response (> `slow_ms`), screenshot failure, or visual diff over threshold
 - **Live** — everything else
+
+At ~234 sites a full check run takes a few minutes; the workflow timeout is 25 min with headroom.
 
 ## Managing sites
 Edit `sites.json`. Fields per site: `slug` (unique, filename-safe), `name`, `url`, optional `visual_warn_pct` override (use ~40 for pages with hero sliders/video; default is `settings.visual_diff_warn_pct`).

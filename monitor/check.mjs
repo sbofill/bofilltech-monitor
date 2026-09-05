@@ -103,9 +103,36 @@ function diffPct(bufA, bufB) {
 }
 
 // ---------- 3. Run ----------
+const SHOT_BATCH = Number(process.env.SHOT_BATCH || 40);   // sites screenshotted per run
+const HTTP_CONCURRENCY = 10;
+const SHOT_CONCURRENCY = 4;
+
+async function pool(items, limit, fn) {
+  const out = new Array(items.length);
+  let i = 0;
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, async () => {
+    while (i < items.length) { const idx = i++; out[idx] = await fn(items[idx], idx); }
+  }));
+  return out;
+}
+
+// HTTP checks: every site, every run, concurrently
+const httpResults = await pool(cfg.sites, HTTP_CONCURRENCY, s => httpCheck(s));
+
+// Screenshot rotation: SHOT_BATCH sites per run via persisted cursor (full cycle ~ sites/SHOT_BATCH runs)
+const cursorPath = path.join(dataDir, 'shot_cursor.json');
+const cursor = (readJson(cursorPath)?.i ?? 0) % cfg.sites.length;
+const shotSet = new Set();
+if (!NO_SHOTS) {
+  for (let k = 0; k < Math.min(SHOT_BATCH, cfg.sites.length); k++) shotSet.add((cursor + k) % cfg.sites.length);
+  // always include sites with no baseline yet is unnecessary — rotation covers all within a few runs
+  fs.writeFileSync(cursorPath, JSON.stringify({ i: (cursor + SHOT_BATCH) % cfg.sites.length, at: new Date().toISOString() }));
+}
+
 const results = [];
-for (const site of cfg.sites) {
-  const http = await httpCheck(site);
+for (let idx = 0; idx < cfg.sites.length; idx++) {
+  const site = cfg.sites[idx];
+  const http = httpResults[idx];
   let status = 'live';
   const issues = [];
 
@@ -115,61 +142,64 @@ for (const site of cfg.sites) {
   if (http.bodyIssue) { status = status === 'down' ? 'down' : 'warning'; issues.push(http.bodyIssue); }
   if (status === 'live' && http.ms > S.slow_ms) { status = 'warning'; issues.push(`Slow response (${(http.ms / 1000).toFixed(1)}s)`); }
 
-  let visual = null;
-  if (!NO_SHOTS && status !== 'down') {
-    try {
-      const png = await screenshot(site);
-      const basePath = path.join(baseDir, `${site.slug}.png`);
-      const latestPath = path.join(shotsDir, `${site.slug}.png`);
-      if (RESET_BASELINES || !fs.existsSync(basePath)) {
-        fs.writeFileSync(basePath, png);
-        fs.writeFileSync(latestPath, png);
-        visual = { diff_pct: 0, baseline_reset: true };
-      } else {
-        const pct = diffPct(fs.readFileSync(basePath), png);
-        visual = { diff_pct: pct };
-        // only rewrite latest when something actually moved (keeps git history lean)
-        const prevPct = prev.sites?.[site.slug]?.visual?.diff_pct;
-        if (pct >= 1 || prevPct === undefined || !fs.existsSync(latestPath)) fs.writeFileSync(latestPath, png);
-        const warnPct = site.visual_warn_pct ?? S.visual_diff_warn_pct;
-        if (pct >= warnPct) {
-          if (status === 'live') status = 'warning';
-          issues.push(`Visual change ${pct}% vs baseline`);
-        }
-      }
-    } catch (e) {
-      issues.push(`Screenshot failed: ${e.message.slice(0, 120)}`);
-      if (status === 'live') status = 'warning';
-    }
-  }
-
-  // history (cap ~2 weeks of hourly runs per site)
-  const h = history[site.slug] || [];
-  h.push({ t: Date.now(), s: status, ms: http.ms });
-  history[site.slug] = h.slice(-336);
-  const up = h.filter(x => x.s !== 'down').length;
-  const uptimePct = +(100 * up / h.length).toFixed(1);
-
-  results.push({
-    slug: site.slug, name: site.name, url: site.url,
-    status, issues, code: http.code, ms: http.ms, visual,
-    uptime_pct: uptimePct,
-    checked_at: new Date().toISOString(),
-  });
-  console.log(`[${status.toUpperCase().padEnd(7)}] ${site.name} — ${http.code} in ${http.ms}ms${issues.length ? ' — ' + issues.join('; ') : ''}`);
+  results.push({ site, idx, status, issues, http, visual: prev.sites?.[site.slug]?.visual ?? null });
 }
+
+// Screenshots for this run's batch (skip down sites)
+const toShoot = results.filter(r => shotSet.has(r.idx) && r.status !== 'down');
+if (toShoot.length) await getBrowser();
+await pool(toShoot, SHOT_CONCURRENCY, async (r) => {
+  const site = r.site;
+  try {
+    const png = await screenshot(site);
+    const basePath = path.join(baseDir, `${site.slug}.png`);
+    const latestPath = path.join(shotsDir, `${site.slug}.png`);
+    if (RESET_BASELINES || !fs.existsSync(basePath)) {
+      fs.writeFileSync(basePath, png);
+      fs.writeFileSync(latestPath, png);
+      r.visual = { diff_pct: 0, baseline_reset: true };
+    } else {
+      const pct = diffPct(fs.readFileSync(basePath), png);
+      r.visual = { diff_pct: pct };
+      const prevPct = prev.sites?.[site.slug]?.visual?.diff_pct;
+      if (pct >= 1 || prevPct === undefined || !fs.existsSync(latestPath)) fs.writeFileSync(latestPath, png);
+      const warnPct = site.visual_warn_pct ?? S.visual_diff_warn_pct;
+      if (pct >= warnPct) {
+        if (r.status === 'live') r.status = 'warning';
+        r.issues.push(`Visual change ${pct}% vs baseline`);
+      }
+    }
+  } catch (e) {
+    r.issues.push(`Screenshot failed: ${e.message.slice(0, 120)}`);
+    if (r.status === 'live') r.status = 'warning';
+  }
+});
+
+const final = results.map(r => {
+  const h = history[r.site.slug] || [];
+  h.push({ t: Date.now(), s: r.status, ms: r.http.ms });
+  history[r.site.slug] = h.slice(-336);
+  const up = h.filter(x => x.s !== 'down').length;
+  console.log(`[${r.status.toUpperCase().padEnd(7)}] ${r.site.name} — ${r.http.code} in ${r.http.ms}ms${r.issues.length ? ' — ' + r.issues.join('; ') : ''}`);
+  return {
+    slug: r.site.slug, name: r.site.name, url: r.site.url,
+    status: r.status, issues: r.issues, code: r.http.code, ms: r.http.ms, visual: r.visual,
+    uptime_pct: +(100 * up / h.length).toFixed(1),
+    checked_at: new Date().toISOString(),
+  };
+});
 if (browser) await browser.close();
 
 // ---------- 4. Persist ----------
 const out = {
   generated_at: new Date().toISOString(),
-  sites: Object.fromEntries(results.map(r => [r.slug, r])),
+  sites: Object.fromEntries(final.map(r => [r.slug, r])),
 };
 fs.writeFileSync(path.join(dataDir, 'status.json'), JSON.stringify(out, null, 2));
 fs.writeFileSync(path.join(dataDir, 'history.json'), JSON.stringify(history));
 
 // ---------- 5. Alerts on transitions ----------
-const transitions = results.filter(r => {
+const transitions = final.filter(r => {
   const was = prev.sites?.[r.slug]?.status;
   return was && was !== r.status && (r.status !== 'live' || was === 'down');
 });
@@ -199,5 +229,5 @@ if (transitions.length) {
   }
 }
 
-const downCount = results.filter(r => r.status === 'down').length;
-console.log(`\nDone: ${results.length} sites, ${downCount} down, ${results.filter(r => r.status === 'warning').length} warning.`);
+const downCount = final.filter(r => r.status === 'down').length;
+console.log(`\nDone: ${final.length} sites (${toShoot.length} screenshotted this run), ${downCount} down, ${final.filter(r => r.status === 'warning').length} warning.`);

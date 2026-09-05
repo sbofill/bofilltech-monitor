@@ -8,37 +8,1288 @@
   },
   "sites": [
     {
-      "slug": "bofilltech",
-      "name": "Bofill Technologies",
-      "url": "https://bofilltech.com"
+      "slug": "14roc",
+      "name": "14Roc",
+      "url": "https://14roc.com"
     },
     {
-      "slug": "jostvandyke",
-      "name": "White Bay Villas",
-      "url": "https://www.jostvandyke.com",
+      "slug": "3on7fuel",
+      "name": "3On7Fuel",
+      "url": "https://3on7fuel.com"
+    },
+    {
+      "slug": "401homebuyer",
+      "name": "401Homebuyer",
+      "url": "https://401homebuyer.com"
+    },
+    {
+      "slug": "abellonainn",
+      "name": "Abellona Inn",
+      "url": "https://abellonainn.com",
       "visual_warn_pct": 40
     },
     {
-      "slug": "oceanvista",
-      "name": "Ocean Vista Resort",
+      "slug": "agrocouncil",
+      "name": "Agrocouncil",
+      "url": "https://agrocouncil.org"
+    },
+    {
+      "slug": "ahmesconstruction",
+      "name": "Ahmes Construction",
+      "url": "https://ahmesconstruction.com"
+    },
+    {
+      "slug": "aidenflagstaff",
+      "name": "Aidenflagstaff",
+      "url": "https://aidenflagstaff.com"
+    },
+    {
+      "slug": "alegnasoap",
+      "name": "Alegna Soap",
+      "url": "https://alegnasoap.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "americanbeech",
+      "name": "American Beech",
+      "url": "https://americanbeech.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "americanbeechvt",
+      "name": "American Beech",
+      "url": "https://americanbeechvt.com"
+    },
+    {
+      "slug": "anchorgroupmgmt",
+      "name": "Anchor Management",
+      "url": "https://anchorgroupmgmt.com"
+    },
+    {
+      "slug": "anchorinnbeachhouse",
+      "name": "Anchor Inn Beach House",
+      "url": "https://anchorinnbeachhouse.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "anenglishgardenbb",
+      "name": "An English Garden",
+      "url": "https://anenglishgardenbb.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "annegouldcollegeadvisor",
+      "name": "Anne Gould College Advisor",
+      "url": "https://annegouldcollegeadvisor.com"
+    },
+    {
+      "slug": "apminn",
+      "name": "APM Inn & Suites",
+      "url": "https://apminn.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "aquabluehotels",
+      "name": "Aqua Blue",
+      "url": "https://aquabluehotels.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "aquahotelbeachclub",
+      "name": "American Beech",
+      "url": "https://aquahotelbeachclub.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "aquastarinn",
+      "name": "AquaStar Inn",
+      "url": "https://aquastarinn.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "archwayfishtown",
+      "name": "Archway Fishtown",
+      "url": "https://archwayfishtown.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "ascendcapitalmanagement",
+      "name": "Ascend Capital Management",
+      "url": "https://ascendcapitalmanagement.com"
+    },
+    {
+      "slug": "atlanticinn",
+      "name": "Atlanticinn",
+      "url": "https://atlanticinn.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "atlanticoceanfronthotel",
+      "name": "Atlantic Oceanfront Motel",
+      "url": "https://atlanticoceanfronthotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "atlantismotel",
+      "name": "Atlantismotel",
+      "url": "https://atlantismotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "atwellsgroup",
+      "name": "Atwells",
+      "url": "https://atwellsgroup.com"
+    },
+    {
+      "slug": "b3ogt",
+      "name": "B3Ogt",
+      "url": "https://b3ogt.com"
+    },
+    {
+      "slug": "beachcombermontauk",
+      "name": "Beachcombermontauk",
+      "url": "https://beachcombermontauk.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "beachmereinn",
+      "name": "Beachmere",
+      "url": "https://beachmereinn.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "bermudagetaway",
+      "name": "Bermuda Getaway",
+      "url": "https://bermudagetaway.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "bhycr",
+      "name": "Bhycr",
+      "url": "https://bhycr.com"
+    },
+    {
+      "slug": "bigpinekeymotel",
+      "name": "Bigpinekeymotel",
+      "url": "https://bigpinekeymotel.net",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "blockislandalarm",
+      "name": "Blockislandalarm",
+      "url": "https://blockislandalarm.com"
+    },
+    {
+      "slug": "blockislandbbq",
+      "name": "Blockislandbbq",
+      "url": "https://blockislandbbq.com"
+    },
+    {
+      "slug": "blockislandbooking",
+      "name": "Blockislandbooking",
+      "url": "https://blockislandbooking.com"
+    },
+    {
+      "slug": "blockislandfigurehead",
+      "name": "Payne's Harbor View Inn",
+      "url": "https://blockislandfigurehead.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "blockislandinns",
+      "name": "Block Island Inns",
+      "url": "https://blockislandinns.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "blockislandstays",
+      "name": "Payne's Harbor View Inn",
+      "url": "https://blockislandstays.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "bofilltech",
+      "name": "Bofill Tech",
+      "url": "https://bofilltech.com"
+    },
+    {
+      "slug": "bohringerinc",
+      "name": "Bohringerinc",
+      "url": "https://bohringerinc.com"
+    },
+    {
+      "slug": "bookifypro",
+      "name": "Bookifypro",
+      "url": "https://bookifypro.com"
+    },
+    {
+      "slug": "borealislandscapelighting",
+      "name": "Borealislandscapelighting",
+      "url": "https://borealislandscapelighting.com"
+    },
+    {
+      "slug": "borgosanvincenzo",
+      "name": "Borgosanvincenzo",
+      "url": "https://borgosanvincenzo.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "braktub",
+      "name": "Brak Tub",
+      "url": "https://braktub.com"
+    },
+    {
+      "slug": "breslinrealty",
+      "name": "Breslinrealty",
+      "url": "https://breslinrealty.com"
+    },
+    {
+      "slug": "bretgilliam",
+      "name": "Bretgilliam",
+      "url": "https://bretgilliam.com"
+    },
+    {
+      "slug": "brineybreezes",
+      "name": "Briney Breezes",
+      "url": "https://brineybreezes.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "brittnewmandesign",
+      "name": "Britt Newman Design",
+      "url": "https://brittnewmandesign.com"
+    },
+    {
+      "slug": "broker-windsongresidences",
+      "name": "Windsong Residences",
+      "url": "https://broker.windsongresidences.com"
+    },
+    {
+      "slug": "byerscollective",
+      "name": "Molly",
+      "url": "https://byerscollective.com"
+    },
+    {
+      "slug": "bytheseaguests",
+      "name": "By The Sea Guests",
+      "url": "https://bytheseaguests.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "castlesinparadise",
+      "name": "Castlesinparadise",
+      "url": "https://castlesinparadise.com"
+    },
+    {
+      "slug": "ccmweddings",
+      "name": "Cortlandt Colonial",
+      "url": "https://ccmweddings.com"
+    },
+    {
+      "slug": "cedarhouseonsound",
+      "name": "Cedar House on Sound",
+      "url": "https://cedarhouseonsound.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "centcal",
+      "name": "Central Califormia",
+      "url": "https://centcal.com"
+    },
+    {
+      "slug": "chasecreek",
+      "name": "Chase Creek",
+      "url": "https://chasecreek.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "chriscraftnw",
+      "name": "Chris Craft Northwest",
+      "url": "https://chriscraftnw.com"
+    },
+    {
+      "slug": "citizens4humanity",
+      "name": "Citizens4Humanity",
+      "url": "https://citizens4humanity.org"
+    },
+    {
+      "slug": "clearwaterbeachclub",
+      "name": "Clearwater Beach Club",
+      "url": "https://clearwaterbeachclub.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "collinsirishpub",
+      "name": "Ascend Capital Management",
+      "url": "https://collinsirishpub.com"
+    },
+    {
+      "slug": "colonialshoresny",
+      "name": "Colonialshoresny",
+      "url": "https://colonialshoresny.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "congocoastal",
+      "name": "Congocoastal",
+      "url": "https://congocoastal.com"
+    },
+    {
+      "slug": "courtneysplacekeywest",
+      "name": "Courtneysplacekeywest",
+      "url": "https://courtneysplacekeywest.com"
+    },
+    {
+      "slug": "coveatyarmouth",
+      "name": "Cove at Yarmouth",
+      "url": "https://coveatyarmouth.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "cozycabins",
+      "name": "Cozycabins",
+      "url": "https://cozycabins.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "crownpointcondos",
+      "name": "Crown Point Condos",
+      "url": "https://crownpointcondos.net",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "customwindowsllc",
+      "name": "Customwindowsllc",
+      "url": "https://customwindowsllc.com"
+    },
+    {
+      "slug": "customwinecellars",
+      "name": "Custom Wine Cellars",
+      "url": "https://customwinecellars.com"
+    },
+    {
+      "slug": "davebofill",
+      "name": "Dave Bofill Marine",
+      "url": "https://davebofill.com"
+    },
+    {
+      "slug": "daysail-bvi",
+      "name": "Adventure Charters BVI",
+      "url": "https://daysail-bvi.com"
+    },
+    {
+      "slug": "dibiaseassociates",
+      "name": "Dibiase Associates",
+      "url": "https://dibiaseassociates.com"
+    },
+    {
+      "slug": "dirtybirdiesbargrill",
+      "name": "Ascend Capital Management",
+      "url": "https://dirtybirdiesbargrill.com"
+    },
+    {
+      "slug": "douglasri",
+      "name": "Douglas Construction",
+      "url": "https://douglasri.com"
+    },
+    {
+      "slug": "dunecresthotel",
+      "name": "Dune Crest Hotel",
+      "url": "https://dunecresthotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "eastlongisland",
+      "name": "East Long Island",
+      "url": "https://eastlongisland.com"
+    },
+    {
+      "slug": "edgewatercapecodma",
+      "name": "Edgewater Cape Codma",
+      "url": "https://edgewatercapecodma.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "elmwoodmotorcourt",
+      "name": "Elmwoodmotorcourt",
+      "url": "https://elmwoodmotorcourt.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "executivemotel-maine",
+      "name": "Executivemotel Maine",
+      "url": "https://executivemotel-maine.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "familyskitrips",
+      "name": "Familyskitrips",
+      "url": "https://familyskitrips.com"
+    },
+    {
+      "slug": "ferraromanufacturing",
+      "name": "Ferraro Manufacturing",
+      "url": "https://ferraromanufacturing.com"
+    },
+    {
+      "slug": "fidalgocountryinn",
+      "name": "Fidalgo Country Inn",
+      "url": "https://fidalgocountryinn.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "flabayclub",
+      "name": "Florida Bay Club",
+      "url": "https://flabayclub.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "flightreliefdrink",
+      "name": "Flightreliefdrink",
+      "url": "https://flightreliefdrink.com"
+    },
+    {
+      "slug": "frangipaniresort",
+      "name": "Frangipani Beach Resort",
+      "url": "https://frangipaniresort.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "frogcitymill",
+      "name": "Anchor Management",
+      "url": "https://frogcitymill.com"
+    },
+    {
+      "slug": "gagnongeothermal",
+      "name": "Gagnongeothermal",
+      "url": "https://gagnongeothermal.com"
+    },
+    {
+      "slug": "galehotels",
+      "name": "Galehotels",
+      "url": "https://galehotels.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "galemiami",
+      "name": "GaleMiami",
+      "url": "https://galemiami.com"
+    },
+    {
+      "slug": "galemiamihotels",
+      "name": "GaleMiami",
+      "url": "https://galemiamihotels.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "gansevoorthospitality",
+      "name": "Gansevoorthospitality",
+      "url": "https://gansevoorthospitality.com"
+    },
+    {
+      "slug": "gauntreeservice",
+      "name": "Gauntreeservice",
+      "url": "https://gauntreeservice.com"
+    },
+    {
+      "slug": "getoffourisland",
+      "name": "Getoffourisland",
+      "url": "https://getoffourisland.com"
+    },
+    {
+      "slug": "gibraltarmgt",
+      "name": "The Breton Group",
+      "url": "https://gibraltarmgt.com"
+    },
+    {
+      "slug": "granaway",
+      "name": "Granaway",
+      "url": "https://granaway.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "greenbankbermuda",
+      "name": "Greenbank Bermuda",
+      "url": "https://greenbankbermuda.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "greenwichhearingaids",
+      "name": "Greenwich Hearing Aids",
+      "url": "https://greenwichhearingaids.com"
+    },
+    {
+      "slug": "hamiltonvillageinn",
+      "name": "Hamilton",
+      "url": "https://hamiltonvillageinn.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "hamletinn",
+      "name": "Hamlet Inn",
+      "url": "https://hamletinn.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "hayharborclub",
+      "name": "Hay Harbor Club",
+      "url": "https://hayharborclub.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "hillcrestgolf",
+      "name": "Hillcrestgolf",
+      "url": "https://hillcrestgolf.net"
+    },
+    {
+      "slug": "hudsonvalleycharter",
+      "name": "Hudson Valley Charter Service",
+      "url": "https://hudsonvalleycharter.com"
+    },
+    {
+      "slug": "ims21",
+      "name": "Ims21",
+      "url": "https://ims21.net"
+    },
+    {
+      "slug": "innathighway1",
+      "name": "Inn at Highway 1",
+      "url": "https://innathighway1.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "insatiableeats",
+      "name": "Insatiable Eats",
+      "url": "https://insatiableeats.com"
+    },
+    {
+      "slug": "jamesportbaysuites",
+      "name": "Jamesportbaysuites",
+      "url": "https://jamesportbaysuites.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "jcmlaw",
+      "name": "Jcmlaw",
+      "url": "https://jcmlaw.com"
+    },
+    {
+      "slug": "jladlercarpentry",
+      "name": "Jladlercarpentry",
+      "url": "https://jladlercarpentry.com"
+    },
+    {
+      "slug": "jlhtherapy",
+      "name": "JLH Therapy",
+      "url": "https://jlhtherapy.com"
+    },
+    {
+      "slug": "jostvandyke",
+      "name": "Jostvandyke",
+      "url": "https://jostvandyke.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "kennebunkbeachmaine",
+      "name": "Kennebunk Beach Maine",
+      "url": "https://kennebunkbeachmaine.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "kesslerusa",
+      "name": "Kessler USA",
+      "url": "https://kesslerusa.com"
+    },
+    {
+      "slug": "kingshousemotorhotel",
+      "name": "Ascend Capital Management",
+      "url": "https://kingshousemotorhotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "kmss-us",
+      "name": "KM Security Solutions",
+      "url": "https://kmss-us.com"
+    },
+    {
+      "slug": "ktelderlaw",
+      "name": "Kilbourne & Tully - Elder Law Offices",
+      "url": "https://ktelderlaw.com"
+    },
+    {
+      "slug": "liregentsprep",
+      "name": "Long Island Regents Prep",
+      "url": "https://liregentsprep.com"
+    },
+    {
+      "slug": "littlerichgirl",
+      "name": "Littlerichgirl",
+      "url": "https://littlerichgirl.com"
+    },
+    {
+      "slug": "littlesurinn",
+      "name": "Little Sur Inn",
+      "url": "https://littlesurinn.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "lodgeatkennebunk",
+      "name": "Lodge at Kennebunk",
+      "url": "https://lodgeatkennebunk.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "mannafishfarms",
+      "name": "Manna Fish Farms",
+      "url": "https://mannafishfarms.com"
+    },
+    {
+      "slug": "mannahamptonsrestaurant",
+      "name": "Mannahamptonsrestaurant",
+      "url": "https://mannahamptonsrestaurant.com"
+    },
+    {
+      "slug": "mannaoceanfoundation",
+      "name": "Manna Ocean Foundation",
+      "url": "https://mannaoceanfoundation.com"
+    },
+    {
+      "slug": "mannarestaurant",
+      "name": "Manna Restaurant",
+      "url": "https://mannarestaurant.com"
+    },
+    {
+      "slug": "mannaseafoodblockchain",
+      "name": "Manna Seafood Blockchain",
+      "url": "https://mannaseafoodblockchain.com"
+    },
+    {
+      "slug": "marinerresort",
+      "name": "Marinerresort",
+      "url": "https://marinerresort.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "mbpoa",
+      "name": "Montauk Beach Property Owners Association",
+      "url": "https://mbpoa.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "meadowviewhousebi",
+      "name": "Meadowviewhousebi",
+      "url": "https://meadowviewhousebi.com"
+    },
+    {
+      "slug": "meetinghousemarina",
+      "name": "Meetinghousemarina",
+      "url": "https://meetinghousemarina.com"
+    },
+    {
+      "slug": "metropolisdiner",
+      "name": "Metropolisdiner",
+      "url": "https://metropolisdiner.com"
+    },
+    {
+      "slug": "mistyharborresort",
+      "name": "Mistyharborresort",
+      "url": "https://mistyharborresort.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "mondocreations",
+      "name": "Mondo Creations",
+      "url": "https://mondocreations.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "montaukhouserentals",
+      "name": "Montaukhouserentals",
+      "url": "https://montaukhouserentals.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "montauklakeclub",
+      "name": "Montauk Lake Club",
+      "url": "https://montauklakeclub.com"
+    },
+    {
+      "slug": "montaukmanor",
+      "name": "Montauk Manor",
+      "url": "https://montaukmanor.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "montauksoundview",
+      "name": "Montauk Soundview",
+      "url": "https://montauksoundview.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "moonstonelanding",
+      "name": "Moonstone Landing",
+      "url": "https://moonstonelanding.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "mountnevishotel",
+      "name": "Mountnevishotel",
+      "url": "https://mountnevishotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "myoysterbi",
+      "name": "My Oyster",
+      "url": "https://myoysterbi.com"
+    },
+    {
+      "slug": "natalestransport",
+      "name": "Natales Transport",
+      "url": "https://natalestransport.com"
+    },
+    {
+      "slug": "newrochellept",
+      "name": "New Rochelle Physical Therapy",
+      "url": "https://newrochellept.com"
+    },
+    {
+      "slug": "newyorkcateringco",
+      "name": "Newyorkcateringco",
+      "url": "https://newyorkcateringco.com"
+    },
+    {
+      "slug": "nfct",
+      "name": "Nfct",
+      "url": "https://nfct.com"
+    },
+    {
+      "slug": "northforkcarwash",
+      "name": "Hildeth Advisors",
+      "url": "https://northforkcarwash.com"
+    },
+    {
+      "slug": "northharbormontauk",
+      "name": "North Harbor Montauk",
+      "url": "https://northharbormontauk.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "oceancliff1and2",
+      "name": "Oceancliff 1 & 2",
+      "url": "https://oceancliff1and2.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "oceanvistaresort",
+      "name": "Oceanvistaresort",
       "url": "https://oceanvistaresort.com",
       "visual_warn_pct": 40
     },
     {
-      "slug": "yorkharborinn",
-      "name": "York Harbor Inn",
-      "url": "https://www.yorkharborinn.com",
+      "slug": "oceanwoodsresort",
+      "name": "Ocean Woods Resort",
+      "url": "https://oceanwoodsresort.com",
       "visual_warn_pct": 40
     },
     {
-      "slug": "oshucks",
-      "name": "O Shucks Catering",
+      "slug": "ogunquithotels",
+      "name": "Ogunquithotels",
+      "url": "https://ogunquithotels.net",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "oldorchardbeachlodging",
+      "name": "Old Orchard Beach",
+      "url": "https://oldorchardbeachlodging.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "olympia-vt",
+      "name": "Oympia Lodge",
+      "url": "https://olympia-vt.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "onmontauk",
+      "name": "Onmontauk",
+      "url": "https://onmontauk.com"
+    },
+    {
+      "slug": "onthebeachmotel",
+      "name": "Onthebeachmotel",
+      "url": "https://onthebeachmotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "oquossoccountrysuites",
+      "name": "Oquossoc Country Suites",
+      "url": "https://oquossoccountrysuites.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "oshuckscatering",
+      "name": "O\u2019Shucks Catering",
       "url": "https://oshuckscatering.com"
     },
     {
-      "slug": "dunecrest",
-      "name": "Dune Crest Hotel",
-      "url": "https://dunecresthotel.com",
+      "slug": "outeastmgmt",
+      "name": "Out East Management",
+      "url": "https://outeastmgmt.com"
+    },
+    {
+      "slug": "paintedrockdesigns",
+      "name": "Paintedrockdesigns",
+      "url": "https://paintedrockdesigns.com"
+    },
+    {
+      "slug": "paintedrockfloraldesigns",
+      "name": "Painted Rock Designs",
+      "url": "https://paintedrockfloraldesigns.com"
+    },
+    {
+      "slug": "palmamiamibeach",
+      "name": "Palmamiamibeach",
+      "url": "https://palmamiamibeach.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "papkeproperties",
+      "name": "Papke Properties",
+      "url": "https://papkeproperties.com"
+    },
+    {
+      "slug": "paradisevacationsuites",
+      "name": "Paradisevacationsuites",
+      "url": "https://paradisevacationsuites.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "paragonct",
+      "name": "Paragonct",
+      "url": "https://paragonct.com"
+    },
+    {
+      "slug": "paynesharborviewinn",
+      "name": "Payne's Harbor View Inn",
+      "url": "https://paynesharborviewinn.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "pcresortandclub",
+      "name": "Panama City Resort and Club",
+      "url": "https://pcresortandclub.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "peaksandocean",
+      "name": "Peaksandocean",
+      "url": "https://peaksandocean.ca"
+    },
+    {
+      "slug": "pelhambayhomecenter",
+      "name": "Pelham Bay Home Center",
+      "url": "https://pelhambayhomecenter.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "pinkb",
+      "name": "Pinkb",
+      "url": "https://pinkb.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "pinkpalmhotel",
+      "name": "Pinkpalmhotel",
+      "url": "https://pinkpalmhotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "pjspubnarragansett",
+      "name": "Pjspubnarragansett",
+      "url": "https://pjspubnarragansett.com"
+    },
+    {
+      "slug": "pompetteflagstaff",
+      "name": "Pompetteflagstaff",
+      "url": "https://pompetteflagstaff.com"
+    },
+    {
+      "slug": "portsofcallresort",
+      "name": "Ports of Call Resort",
+      "url": "https://portsofcallresort.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "portsofcallvillas",
+      "name": "Ports of Call Villas",
+      "url": "https://portsofcallvillas.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "premier-flight",
+      "name": "Premier Flight",
+      "url": "https://premier-flight.com"
+    },
+    {
+      "slug": "providenceoysterbar",
+      "name": "Providenceoysterbar",
+      "url": "https://providenceoysterbar.com"
+    },
+    {
+      "slug": "quickstepmarine",
+      "name": "Quick Step Marine",
+      "url": "https://quickstepmarine.com"
+    },
+    {
+      "slug": "redbarnhomemade",
+      "name": "Redbarnhomemade",
+      "url": "https://redbarnhomemade.com"
+    },
+    {
+      "slug": "redsquirrellodge",
+      "name": "Redsquirrellodge",
+      "url": "https://redsquirrellodge.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "rhumblinemaine",
+      "name": "Rhumblinemaine",
+      "url": "https://rhumblinemaine.com"
+    },
+    {
+      "slug": "riomexicancafe",
+      "name": "Riomexicancafe",
+      "url": "https://riomexicancafe.com"
+    },
+    {
+      "slug": "robertnewmanonline",
+      "name": "Robert Newman",
+      "url": "https://robertnewmanonline.com"
+    },
+    {
+      "slug": "roccosgiftcard",
+      "name": "Roccosgiftcard",
+      "url": "https://roccosgiftcard.com"
+    },
+    {
+      "slug": "rosefarminn",
+      "name": "The Rose Farm Inn",
+      "url": "https://rosefarminn.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "royalatlantic",
+      "name": "Royal Atlantic",
+      "url": "https://royalatlantic.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "sandsoob",
+      "name": "Sandsoob",
+      "url": "https://sandsoob.com"
+    },
+    {
+      "slug": "sbmotel",
+      "name": "Sbmotel",
+      "url": "https://sbmotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "seachambers",
+      "name": "Seachambers",
+      "url": "https://seachambers.com"
+    },
+    {
+      "slug": "searosesuites",
+      "name": "Searosesuites",
+      "url": "https://searosesuites.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "seashellcapecod",
+      "name": "Sea Shell Motel - Cape Cod",
+      "url": "https://seashellcapecod.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "seaviewmotel",
+      "name": "Sea View Motel",
+      "url": "https://seaviewmotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "sebastiansbvi",
+      "name": "Sebastian's on the Beach",
+      "url": "https://sebastiansbvi.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "settcoffee",
+      "name": "Sett Coffee",
+      "url": "https://settcoffee.com"
+    },
+    {
+      "slug": "sharipharmachem",
+      "name": "Sharipharmachem",
+      "url": "https://sharipharmachem.world"
+    },
+    {
+      "slug": "shawmont",
+      "name": "Shawmont Hotel",
+      "url": "https://shawmont.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "sheffieldhousebi",
+      "name": "Sheffield House",
+      "url": "https://sheffieldhousebi.com"
+    },
+    {
+      "slug": "shinnecocklobsterfactory",
+      "name": "Shinnecock Lobster Factory",
+      "url": "https://shinnecocklobsterfactory.com"
+    },
+    {
+      "slug": "shoreroadmarina",
+      "name": "Shoreroadmarina",
+      "url": "https://shoreroadmarina.com"
+    },
+    {
+      "slug": "shortlinelots",
+      "name": "Anchor Management",
+      "url": "https://shortlinelots.com"
+    },
+    {
+      "slug": "shuttersonthebanks",
+      "name": "Shuttersonthebanks",
+      "url": "https://shuttersonthebanks.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "skysqueegee",
+      "name": "Sky Squeegee",
+      "url": "https://skysqueegee.com"
+    },
+    {
+      "slug": "soleeast",
+      "name": "Soleeast",
+      "url": "https://soleeast.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "southamptoninn",
+      "name": "Southampton Inn",
+      "url": "https://southamptoninn.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "southoldbeachmotel",
+      "name": "Southold Beach Motel",
+      "url": "https://southoldbeachmotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "springhousehotel",
+      "name": "Spring House Hotel",
+      "url": "https://springhousehotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "stevenbofill",
+      "name": "Steven Bofill",
+      "url": "https://stevenbofill.com"
+    },
+    {
+      "slug": "tanglwoodresorts",
+      "name": "Tanglwood Resorts",
+      "url": "https://tanglwoodresorts.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "taracosta",
+      "name": "Tara Costa",
+      "url": "https://taracosta.com"
+    },
+    {
+      "slug": "terracecottagecolony",
+      "name": "Terrace Cottage Colony",
+      "url": "https://terracecottagecolony.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "terrracebythesea",
+      "name": "Terrracebythesea",
+      "url": "https://terrracebythesea.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "theanchormotel",
+      "name": "The Anchor Motel",
+      "url": "https://theanchormotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "theatlantichouse",
+      "name": "The Atlantic House",
+      "url": "https://theatlantichouse.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "theautobodyshopny",
+      "name": "The Auto Body Shop",
+      "url": "https://theautobodyshopny.com"
+    },
+    {
+      "slug": "thebretongroup",
+      "name": "The Breton Group",
+      "url": "https://thebretongroup.com"
+    },
+    {
+      "slug": "theellsworthhotel",
+      "name": "Theellsworthhotel",
+      "url": "https://theellsworthhotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "thefortescape",
+      "name": "TheFortEscape",
+      "url": "https://thefortescape.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "thegarlandscapecod",
+      "name": "Thegarlandscapecod",
+      "url": "https://thegarlandscapecod.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "thegrandhotel",
+      "name": "The Grand Hotel",
+      "url": "https://thegrandhotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "thekaskadeshotel",
+      "name": "The Kaskades Hotel",
+      "url": "https://thekaskadeshotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "thekendrickhotel",
+      "name": "The Kendrick Hotel",
+      "url": "https://thekendrickhotel.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "theluxuryvacationguide",
+      "name": "Theluxuryvacationguide",
+      "url": "https://theluxuryvacationguide.com"
+    },
+    {
+      "slug": "theneptuneinn",
+      "name": "The Neptune Inn",
+      "url": "https://theneptuneinn.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "thenorthernpines",
+      "name": "The Northern Pines",
+      "url": "https://thenorthernpines.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "theredinn",
+      "name": "The Red Inn",
+      "url": "https://theredinn.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "theseastar",
+      "name": "The Sea Star",
+      "url": "https://theseastar.com"
+    },
+    {
+      "slug": "thesuccessiongroup",
+      "name": "Thesuccessiongroup",
+      "url": "https://thesuccessiongroup.com"
+    },
+    {
+      "slug": "thesullivanhouse",
+      "name": "The Sullivan House",
+      "url": "https://thesullivanhouse.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "thesurflodge",
+      "name": "Thesurflodge",
+      "url": "https://thesurflodge.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "thetipperaryinn",
+      "name": "Kenny's Tipperary Inn",
+      "url": "https://thetipperaryinn.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "thewanderlusteffect",
+      "name": "Thewanderlusteffect",
+      "url": "https://thewanderlusteffect.com"
+    },
+    {
+      "slug": "treehouseexoticrentals",
+      "name": "Treehouseexoticrentals",
+      "url": "https://treehouseexoticrentals.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "upperkeysrentals",
+      "name": "Upperkeysrentals",
+      "url": "https://upperkeysrentals.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "vengolabs",
+      "name": "Vengolabs",
+      "url": "https://vengolabs.com"
+    },
+    {
+      "slug": "villasatsouthgate",
+      "name": "Villas at Southgate",
+      "url": "https://villasatsouthgate.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "waveaerospace",
+      "name": "Wave Aerospace",
+      "url": "https://waveaerospace.com"
+    },
+    {
+      "slug": "wavecrestonocean",
+      "name": "Wavecrest Resort",
+      "url": "https://wavecrestonocean.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "westlake-marina",
+      "name": "Westlake Marina",
+      "url": "https://westlake-marina.com"
+    },
+    {
+      "slug": "windsongresidences",
+      "name": "Windsong Residences",
+      "url": "https://windsongresidences.com",
+      "visual_warn_pct": 40
+    },
+    {
+      "slug": "wrc-nyc",
+      "name": "Wrc Nyc",
+      "url": "https://wrc-nyc.com"
+    },
+    {
+      "slug": "yorkharborinn",
+      "name": "York Harbor Inn",
+      "url": "https://yorkharborinn.com",
       "visual_warn_pct": 40
     }
   ]
