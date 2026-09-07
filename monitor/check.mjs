@@ -43,19 +43,33 @@ function readJson(p) { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } ca
 // ---------- 1. HTTP checks ----------
 async function httpCheck(site) {
   const started = Date.now();
-  const r = { code: 0, ms: 0, error: null, bodyIssue: null };
+  const r = { code: 0, ms: 0, error: null, bodyIssue: null, botProtected: false };
   try {
     const ctl = new AbortController();
     const t = setTimeout(() => ctl.abort(), S.timeout_ms);
     const res = await fetch(site.url, {
       redirect: 'follow',
       signal: ctl.signal,
-      headers: { 'User-Agent': 'BofillTech-VisualMonitor/1.0 (+https://bofilltech.com)' },
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+      },
     });
     clearTimeout(t);
     r.code = res.status;
     const body = await res.text();
     r.ms = Date.now() - started;
+    // WAF/bot-challenge pages (Cloudflare Bot Fight Mode, hosting WAFs): infrastructure is up, it just blocks non-browsers
+    if (r.code === 403 || r.code === 503 || r.code === 429) {
+      const low = body.toLowerCase();
+      if (res.headers.get('cf-mitigated') || res.headers.get('cf-ray') ||
+          low.includes('just a moment') || low.includes('attention required') ||
+          low.includes('cloudflare') || low.includes('captcha') || low.includes('access denied') ||
+          low.includes('bot verification') || body.replace(/\s/g, '').length < 2000) {
+        r.botProtected = true;
+      }
+    }
     for (const s of ERROR_STRINGS) {
       if (body.includes(s)) { r.bodyIssue = s; break; }
     }
@@ -137,9 +151,10 @@ for (let idx = 0; idx < cfg.sites.length; idx++) {
   const issues = [];
 
   if (http.error) { status = 'down'; issues.push(http.error); }
+  else if (http.botProtected) { /* WAF challenged the checker; host is up */ }
   else if (http.code >= 500) { status = 'down'; issues.push(`HTTP ${http.code}`); }
   else if (http.code >= 400) { status = 'warning'; issues.push(`HTTP ${http.code}`); }
-  if (http.bodyIssue) { status = status === 'down' ? 'down' : 'warning'; issues.push(http.bodyIssue); }
+  if (http.bodyIssue && !http.botProtected) { status = status === 'down' ? 'down' : 'warning'; issues.push(http.bodyIssue); }
   if (status === 'live' && http.ms > S.slow_ms) { status = 'warning'; issues.push(`Slow response (${(http.ms / 1000).toFixed(1)}s)`); }
 
   results.push({ site, idx, status, issues, http, visual: prev.sites?.[site.slug]?.visual ?? null });
@@ -183,6 +198,7 @@ const final = results.map(r => {
   return {
     slug: r.site.slug, name: r.site.name, url: r.site.url,
     status: r.status, issues: r.issues, code: r.http.code, ms: r.http.ms, visual: r.visual,
+    bot_protected: r.http.botProtected || undefined,
     uptime_pct: +(100 * up / h.length).toFixed(1),
     checked_at: new Date().toISOString(),
   };

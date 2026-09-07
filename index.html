@@ -162,7 +162,7 @@ function card(site, hist) {
     <div class="px-4 pb-3 pt-1 flex items-end justify-between gap-3">
       ${sparkline(hist)}
       <div class="text-[11px] text-gray-400 text-right">
-        ${site.uptime_pct != null ? site.uptime_pct + '% uptime · ' : ''}${diff ? diff + ' · ' : ''}checked ${ago(site.checked_at)}
+        ${site.bot_protected ? 'bot-protected · ' : ''}${site.uptime_pct != null ? site.uptime_pct + '% uptime · ' : ''}${diff ? diff + ' · ' : ''}checked ${ago(site.checked_at)}
       </div>
     </div>
   </div>`;
