@@ -68,15 +68,15 @@ async function httpCheck(site) {
 }
 
 // ---------- 2. Screenshots + diff ----------
-let browser = null;
-async function getBrowser() {
-  if (browser) return browser;
-  const puppeteer = (await import('puppeteer')).default;
-  browser = await puppeteer.launch({
-    headless: 'shell',
-    args: ['--no-sandbox', '--disable-dev-shm-usage', '--hide-scrollbars'],
-  });
-  return browser;
+let browserP = null;
+function getBrowser() {
+  if (!browserP) {
+    browserP = import('puppeteer').then(({ default: puppeteer }) => puppeteer.launch({
+      headless: 'shell',
+      args: ['--no-sandbox', '--disable-dev-shm-usage', '--hide-scrollbars'],
+    }));
+  }
+  return browserP;
 }
 
 async function screenshot(site) {
@@ -147,7 +147,6 @@ for (let idx = 0; idx < cfg.sites.length; idx++) {
 
 // Screenshots for this run's batch (skip down sites)
 const toShoot = results.filter(r => shotSet.has(r.idx) && r.status !== 'down');
-if (toShoot.length) await getBrowser();
 await pool(toShoot, SHOT_CONCURRENCY, async (r) => {
   const site = r.site;
   try {
@@ -188,7 +187,7 @@ const final = results.map(r => {
     checked_at: new Date().toISOString(),
   };
 });
-if (browser) await browser.close();
+if (browserP) await browserP.then(b => b.close()).catch(() => {});
 
 // ---------- 4. Persist ----------
 const out = {
