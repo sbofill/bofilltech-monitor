@@ -181,7 +181,15 @@ for (let idx = 0; idx < cfg.sites.length; idx++) {
   if (http.bodyIssue && !http.botProtected) { status = status === 'down' ? 'down' : 'warning'; issues.push(http.bodyIssue); }
   if (status === 'live' && http.ms > S.slow_ms) { status = 'warning'; issues.push(`Slow response (${(http.ms / 1000).toFixed(1)}s)`); }
 
-  results.push({ site, idx, status, issues, http, visual: prev.sites?.[site.slug]?.visual ?? null });
+  // Two-strike rule: a site must fail two consecutive runs before it reports Down
+  const prevStreak = prev.sites?.[site.slug]?.down_streak || 0;
+  const downStreak = status === 'down' ? prevStreak + 1 : 0;
+  if (status === 'down' && downStreak < 2) {
+    status = 'warning';
+    issues.unshift('First failure — confirming next run');
+  }
+
+  results.push({ site, idx, status, issues, downStreak, http, visual: prev.sites?.[site.slug]?.visual ?? null });
 }
 
 // Screenshots for this run's batch (skip down sites)
@@ -227,6 +235,7 @@ const final = results.map(r => {
   return {
     slug: r.site.slug, name: r.site.name, url: r.site.url,
     status: r.status, issues: r.issues, code: r.http.code, ms: r.http.ms, visual: r.visual,
+    down_streak: r.downStreak || undefined,
     bot_protected: r.http.botProtected || undefined,
     uptime_pct: +(100 * up / h.length).toFixed(1),
     checked_at: new Date().toISOString(),
@@ -245,7 +254,7 @@ fs.writeFileSync(path.join(dataDir, 'history.json'), JSON.stringify(history));
 // ---------- 5. Alerts on transitions ----------
 const transitions = final.filter(r => {
   const was = prev.sites?.[r.slug]?.status;
-  return was && was !== r.status && (r.status !== 'live' || was === 'down');
+  return was && was !== r.status && (r.status === 'down' || was === 'down');
 });
 
 if (transitions.length) {
