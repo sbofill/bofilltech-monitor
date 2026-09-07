@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-07T04:30:03.547Z",
+  "generated_at": "2026-09-07T04:33:01.634Z",
   "sites": {
     "14roc": {
       "slug": "14roc",
       "name": "14Roc",
       "url": "https://14roc.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 262,
-      "visual": null,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 2007,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.533Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "3on7fuel": {
       "slug": "3on7fuel",
@@ -22,29 +22,31 @@
       "url": "https://3on7fuel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 144,
-      "visual": null,
+      "ms": 224,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "401homebuyer": {
       "slug": "401homebuyer",
       "name": "401Homebuyer",
       "url": "https://401homebuyer.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 198,
-      "visual": null,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 1521,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "abellonainn": {
       "slug": "abellonainn",
@@ -52,14 +54,16 @@
       "url": "https://abellonainn.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 135,
-      "visual": null,
+      "ms": 243,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "agrocouncil": {
       "slug": "agrocouncil",
@@ -67,14 +71,16 @@
       "url": "https://agrocouncil.org",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 240,
-      "visual": null,
+      "ms": 383,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "ahmesconstruction": {
       "slug": "ahmesconstruction",
@@ -82,14 +88,16 @@
       "url": "https://ahmesconstruction.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 263,
-      "visual": null,
+      "ms": 318,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "aidenflagstaff": {
       "slug": "aidenflagstaff",
@@ -97,14 +105,16 @@
       "url": "https://aidenflagstaff.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 205,
-      "visual": null,
+      "ms": 400,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "alegnasoap": {
       "slug": "alegnasoap",
@@ -112,14 +122,16 @@
       "url": "https://alegnasoap.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 214,
-      "visual": null,
+      "ms": 482,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "americanbeech": {
       "slug": "americanbeech",
@@ -127,14 +139,16 @@
       "url": "https://americanbeech.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 222,
-      "visual": null,
+      "ms": 441,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "americanbeechvt": {
       "slug": "americanbeechvt",
@@ -142,14 +156,16 @@
       "url": "https://americanbeechvt.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 251,
-      "visual": null,
+      "ms": 506,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "anchorgroupmgmt": {
       "slug": "anchorgroupmgmt",
@@ -157,14 +173,16 @@
       "url": "https://anchorgroupmgmt.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 186,
-      "visual": null,
+      "ms": 333,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "anchorinnbeachhouse": {
       "slug": "anchorinnbeachhouse",
@@ -172,14 +190,16 @@
       "url": "https://anchorinnbeachhouse.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 196,
-      "visual": null,
+      "ms": 331,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "anenglishgardenbb": {
       "slug": "anenglishgardenbb",
@@ -187,14 +207,16 @@
       "url": "https://anenglishgardenbb.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 137,
-      "visual": null,
+      "ms": 328,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "annegouldcollegeadvisor": {
       "slug": "annegouldcollegeadvisor",
@@ -202,14 +224,16 @@
       "url": "https://annegouldcollegeadvisor.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 118,
-      "visual": null,
+      "ms": 334,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "apminn": {
       "slug": "apminn",
@@ -217,14 +241,16 @@
       "url": "https://apminn.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 201,
-      "visual": null,
+      "ms": 379,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "aquabluehotels": {
       "slug": "aquabluehotels",
@@ -232,29 +258,31 @@
       "url": "https://aquabluehotels.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 217,
-      "visual": null,
+      "ms": 383,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "aquahotelbeachclub": {
       "slug": "aquahotelbeachclub",
       "name": "American Beech",
       "url": "https://aquahotelbeachclub.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 187,
-      "visual": null,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 1659,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "aquastarinn": {
       "slug": "aquastarinn",
@@ -262,14 +290,16 @@
       "url": "https://aquastarinn.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 310,
-      "visual": null,
+      "ms": 391,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "archwayfishtown": {
       "slug": "archwayfishtown",
@@ -277,14 +307,16 @@
       "url": "https://archwayfishtown.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 185,
-      "visual": null,
+      "ms": 398,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "ascendcapitalmanagement": {
       "slug": "ascendcapitalmanagement",
@@ -292,29 +324,31 @@
       "url": "https://ascendcapitalmanagement.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 141,
-      "visual": null,
+      "ms": 402,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "atlanticinn": {
       "slug": "atlanticinn",
       "name": "Atlanticinn",
       "url": "https://atlanticinn.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 124,
-      "visual": null,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 1024,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "atlanticoceanfronthotel": {
       "slug": "atlanticoceanfronthotel",
@@ -322,14 +356,16 @@
       "url": "https://atlanticoceanfronthotel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 99,
-      "visual": null,
+      "ms": 352,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "atlantismotel": {
       "slug": "atlantismotel",
@@ -337,14 +373,16 @@
       "url": "https://atlantismotel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 192,
-      "visual": null,
+      "ms": 372,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "atwellsgroup": {
       "slug": "atwellsgroup",
@@ -352,14 +390,16 @@
       "url": "https://atwellsgroup.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 181,
-      "visual": null,
+      "ms": 364,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "b3ogt": {
       "slug": "b3ogt",
@@ -367,14 +407,16 @@
       "url": "https://b3ogt.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 270,
-      "visual": null,
+      "ms": 307,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "beachcombermontauk": {
       "slug": "beachcombermontauk",
@@ -382,29 +424,31 @@
       "url": "https://beachcombermontauk.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 74,
-      "visual": null,
+      "ms": 279,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.545Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "beachmereinn": {
       "slug": "beachmereinn",
       "name": "Beachmere",
       "url": "https://beachmereinn.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 132,
-      "visual": null,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 1379,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "bermudagetaway": {
       "slug": "bermudagetaway",
@@ -412,44 +456,46 @@
       "url": "https://bermudagetaway.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 100,
-      "visual": null,
+      "ms": 238,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "bhycr": {
       "slug": "bhycr",
       "name": "Bhycr",
       "url": "https://bhycr.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 198,
-      "visual": null,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 1474,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "bigpinekeymotel": {
       "slug": "bigpinekeymotel",
       "name": "Bigpinekeymotel",
       "url": "https://bigpinekeymotel.net",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 160,
-      "visual": null,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 2879,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "blockislandalarm": {
       "slug": "blockislandalarm",
@@ -457,14 +503,16 @@
       "url": "https://blockislandalarm.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 198,
-      "visual": null,
+      "ms": 233,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "blockislandbbq": {
       "slug": "blockislandbbq",
@@ -472,14 +520,16 @@
       "url": "https://blockislandbbq.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
         "Page body nearly empty"
       ],
-      "code": 403,
-      "ms": 167,
-      "visual": null,
+      "code": 200,
+      "ms": 327,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "blockislandbooking": {
       "slug": "blockislandbooking",
@@ -487,14 +537,16 @@
       "url": "https://blockislandbooking.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 176,
-      "visual": null,
+      "ms": 288,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "blockislandfigurehead": {
       "slug": "blockislandfigurehead",
@@ -502,14 +554,16 @@
       "url": "https://blockislandfigurehead.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 215,
-      "visual": null,
+      "ms": 144,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "blockislandinns": {
       "slug": "blockislandinns",
@@ -517,14 +571,16 @@
       "url": "https://blockislandinns.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 167,
-      "visual": null,
+      "ms": 152,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "blockislandstays": {
       "slug": "blockislandstays",
@@ -532,14 +588,16 @@
       "url": "https://blockislandstays.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 164,
-      "visual": null,
+      "ms": 158,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "bofilltech": {
       "slug": "bofilltech",
@@ -547,14 +605,16 @@
       "url": "https://bofilltech.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 176,
-      "visual": null,
+      "ms": 147,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.552Z"
     },
     "bohringerinc": {
       "slug": "bohringerinc",
@@ -562,14 +622,16 @@
       "url": "https://bohringerinc.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 211,
-      "visual": null,
+      "ms": 209,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "bookifypro": {
       "slug": "bookifypro",
@@ -577,29 +639,31 @@
       "url": "https://bookifypro.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 352,
-      "visual": null,
+      "ms": 145,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "borealislandscapelighting": {
       "slug": "borealislandscapelighting",
       "name": "Borealislandscapelighting",
       "url": "https://borealislandscapelighting.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 126,
-      "visual": null,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 656,
+      "visual": {
+        "diff_pct": 0,
+        "baseline_reset": true
+      },
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "borgosanvincenzo": {
       "slug": "borgosanvincenzo",
@@ -607,14 +671,13 @@
       "url": "https://borgosanvincenzo.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 192,
+      "ms": 175,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "braktub": {
       "slug": "braktub",
@@ -622,29 +685,25 @@
       "url": "https://braktub.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 138,
+      "ms": 233,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "breslinrealty": {
       "slug": "breslinrealty",
       "name": "Breslinrealty",
       "url": "https://breslinrealty.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 186,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 174,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "bretgilliam": {
       "slug": "bretgilliam",
@@ -652,14 +711,13 @@
       "url": "https://bretgilliam.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 153,
+      "ms": 217,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "brineybreezes": {
       "slug": "brineybreezes",
@@ -667,14 +725,13 @@
       "url": "https://brineybreezes.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 221,
+      "ms": 160,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "brittnewmandesign": {
       "slug": "brittnewmandesign",
@@ -682,14 +739,13 @@
       "url": "https://brittnewmandesign.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 223,
+      "ms": 162,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "broker-windsongresidences": {
       "slug": "broker-windsongresidences",
@@ -697,14 +753,13 @@
       "url": "https://broker.windsongresidences.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 193,
+      "ms": 215,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "byerscollective": {
       "slug": "byerscollective",
@@ -712,14 +767,13 @@
       "url": "https://byerscollective.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 144,
+      "ms": 259,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "bytheseaguests": {
       "slug": "bytheseaguests",
@@ -727,29 +781,25 @@
       "url": "https://bytheseaguests.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 189,
+      "ms": 301,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "castlesinparadise": {
       "slug": "castlesinparadise",
       "name": "Castlesinparadise",
       "url": "https://castlesinparadise.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 217,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 306,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "ccmweddings": {
       "slug": "ccmweddings",
@@ -757,14 +807,13 @@
       "url": "https://ccmweddings.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 160,
+      "ms": 400,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "cedarhouseonsound": {
       "slug": "cedarhouseonsound",
@@ -772,14 +821,13 @@
       "url": "https://cedarhouseonsound.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 132,
+      "ms": 265,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "centcal": {
       "slug": "centcal",
@@ -787,14 +835,13 @@
       "url": "https://centcal.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 196,
+      "ms": 276,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "chasecreek": {
       "slug": "chasecreek",
@@ -802,14 +849,13 @@
       "url": "https://chasecreek.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 162,
+      "ms": 270,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "chriscraftnw": {
       "slug": "chriscraftnw",
@@ -817,29 +863,25 @@
       "url": "https://chriscraftnw.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 134,
+      "ms": 222,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "citizens4humanity": {
       "slug": "citizens4humanity",
       "name": "Citizens4Humanity",
       "url": "https://citizens4humanity.org",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 263,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 429,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "clearwaterbeachclub": {
       "slug": "clearwaterbeachclub",
@@ -847,14 +889,13 @@
       "url": "https://clearwaterbeachclub.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 150,
+      "ms": 270,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "collinsirishpub": {
       "slug": "collinsirishpub",
@@ -862,59 +903,49 @@
       "url": "https://collinsirishpub.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 169,
+      "ms": 360,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "colonialshoresny": {
       "slug": "colonialshoresny",
       "name": "Colonialshoresny",
       "url": "https://colonialshoresny.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 622,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 3008,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "congocoastal": {
       "slug": "congocoastal",
       "name": "Congocoastal",
       "url": "https://congocoastal.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 116,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 844,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "courtneysplacekeywest": {
       "slug": "courtneysplacekeywest",
       "name": "Courtneysplacekeywest",
       "url": "https://courtneysplacekeywest.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 152,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 1292,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "coveatyarmouth": {
       "slug": "coveatyarmouth",
@@ -922,14 +953,13 @@
       "url": "https://coveatyarmouth.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 175,
+      "ms": 379,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "cozycabins": {
       "slug": "cozycabins",
@@ -937,14 +967,13 @@
       "url": "https://cozycabins.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 206,
+      "ms": 1336,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "crownpointcondos": {
       "slug": "crownpointcondos",
@@ -952,14 +981,13 @@
       "url": "https://crownpointcondos.net",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 191,
+      "ms": 343,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "customwindowsllc": {
       "slug": "customwindowsllc",
@@ -967,14 +995,13 @@
       "url": "https://customwindowsllc.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 262,
+      "ms": 405,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "customwinecellars": {
       "slug": "customwinecellars",
@@ -982,29 +1009,25 @@
       "url": "https://customwinecellars.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 209,
+      "ms": 329,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "davebofill": {
       "slug": "davebofill",
       "name": "Dave Bofill Marine",
       "url": "https://davebofill.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 332,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 366,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "daysail-bvi": {
       "slug": "daysail-bvi",
@@ -1012,29 +1035,25 @@
       "url": "https://daysail-bvi.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 290,
+      "ms": 240,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "dibiaseassociates": {
       "slug": "dibiaseassociates",
       "name": "Dibiase Associates",
       "url": "https://dibiaseassociates.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 495,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 303,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "dirtybirdiesbargrill": {
       "slug": "dirtybirdiesbargrill",
@@ -1042,14 +1061,13 @@
       "url": "https://dirtybirdiesbargrill.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 361,
+      "ms": 191,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "douglasri": {
       "slug": "douglasri",
@@ -1057,14 +1075,13 @@
       "url": "https://douglasri.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 492,
+      "ms": 225,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "dunecresthotel": {
       "slug": "dunecresthotel",
@@ -1072,14 +1089,13 @@
       "url": "https://dunecresthotel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 364,
+      "ms": 161,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "eastlongisland": {
       "slug": "eastlongisland",
@@ -1087,14 +1103,13 @@
       "url": "https://eastlongisland.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 419,
+      "ms": 221,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "edgewatercapecodma": {
       "slug": "edgewatercapecodma",
@@ -1102,14 +1117,13 @@
       "url": "https://edgewatercapecodma.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 452,
+      "ms": 211,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "elmwoodmotorcourt": {
       "slug": "elmwoodmotorcourt",
@@ -1117,29 +1131,25 @@
       "url": "https://elmwoodmotorcourt.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 309,
+      "ms": 232,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "executivemotel-maine": {
       "slug": "executivemotel-maine",
       "name": "Executivemotel Maine",
       "url": "https://executivemotel-maine.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 268,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 352,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "familyskitrips": {
       "slug": "familyskitrips",
@@ -1147,14 +1157,13 @@
       "url": "https://familyskitrips.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 314,
+      "ms": 254,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "ferraromanufacturing": {
       "slug": "ferraromanufacturing",
@@ -1162,14 +1171,13 @@
       "url": "https://ferraromanufacturing.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 203,
+      "ms": 314,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "fidalgocountryinn": {
       "slug": "fidalgocountryinn",
@@ -1177,14 +1185,13 @@
       "url": "https://fidalgocountryinn.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 166,
+      "ms": 285,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "flabayclub": {
       "slug": "flabayclub",
@@ -1192,14 +1199,13 @@
       "url": "https://flabayclub.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 230,
+      "ms": 273,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "flightreliefdrink": {
       "slug": "flightreliefdrink",
@@ -1207,14 +1213,13 @@
       "url": "https://flightreliefdrink.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 191,
+      "ms": 282,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "frangipaniresort": {
       "slug": "frangipaniresort",
@@ -1222,14 +1227,13 @@
       "url": "https://frangipaniresort.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 147,
+      "ms": 305,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "frogcitymill": {
       "slug": "frogcitymill",
@@ -1237,44 +1241,37 @@
       "url": "https://frogcitymill.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 142,
+      "ms": 307,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "gagnongeothermal": {
       "slug": "gagnongeothermal",
       "name": "Gagnongeothermal",
       "url": "https://gagnongeothermal.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 184,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 1280,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "galehotels": {
       "slug": "galehotels",
       "name": "Galehotels",
       "url": "https://galehotels.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 255,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 3449,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "galemiami": {
       "slug": "galemiami",
@@ -1282,29 +1279,27 @@
       "url": "https://galemiami.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 82,
+      "ms": 280,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "galemiamihotels": {
       "slug": "galemiamihotels",
       "name": "GaleMiami",
       "url": "https://galemiamihotels.com",
-      "status": "warning",
+      "status": "down",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "ERR_TLS_CERT_ALTNAME_INVALID"
       ],
-      "code": 403,
-      "ms": 174,
+      "code": 0,
+      "ms": 280,
       "visual": null,
-      "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "uptime_pct": 50,
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "gansevoorthospitality": {
       "slug": "gansevoorthospitality",
@@ -1312,14 +1307,13 @@
       "url": "https://gansevoorthospitality.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 138,
+      "ms": 324,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "gauntreeservice": {
       "slug": "gauntreeservice",
@@ -1327,14 +1321,13 @@
       "url": "https://gauntreeservice.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 168,
+      "ms": 334,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "getoffourisland": {
       "slug": "getoffourisland",
@@ -1342,29 +1335,25 @@
       "url": "https://getoffourisland.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 155,
+      "ms": 314,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "gibraltarmgt": {
       "slug": "gibraltarmgt",
       "name": "The Breton Group",
       "url": "https://gibraltarmgt.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 200,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 930,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "granaway": {
       "slug": "granaway",
@@ -1372,14 +1361,13 @@
       "url": "https://granaway.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 143,
+      "ms": 294,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "greenbankbermuda": {
       "slug": "greenbankbermuda",
@@ -1387,29 +1375,25 @@
       "url": "https://greenbankbermuda.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 181,
+      "ms": 304,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "greenwichhearingaids": {
       "slug": "greenwichhearingaids",
       "name": "Greenwich Hearing Aids",
       "url": "https://greenwichhearingaids.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 215,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 355,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "hamiltonvillageinn": {
       "slug": "hamiltonvillageinn",
@@ -1417,14 +1401,13 @@
       "url": "https://hamiltonvillageinn.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 251,
+      "ms": 303,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "hamletinn": {
       "slug": "hamletinn",
@@ -1432,44 +1415,37 @@
       "url": "https://hamletinn.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 172,
+      "ms": 317,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "hayharborclub": {
       "slug": "hayharborclub",
       "name": "Hay Harbor Club",
       "url": "https://hayharborclub.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 243,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 3783,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "hillcrestgolf": {
       "slug": "hillcrestgolf",
       "name": "Hillcrestgolf",
       "url": "https://hillcrestgolf.net",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 206,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 763,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "hudsonvalleycharter": {
       "slug": "hudsonvalleycharter",
@@ -1477,14 +1453,13 @@
       "url": "https://hudsonvalleycharter.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 154,
+      "ms": 199,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "ims21": {
       "slug": "ims21",
@@ -1492,14 +1467,13 @@
       "url": "https://ims21.net",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 267,
+      "ms": 188,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "innathighway1": {
       "slug": "innathighway1",
@@ -1507,14 +1481,13 @@
       "url": "https://innathighway1.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 271,
+      "ms": 260,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "insatiableeats": {
       "slug": "insatiableeats",
@@ -1522,14 +1495,13 @@
       "url": "https://insatiableeats.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 157,
+      "ms": 281,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "jamesportbaysuites": {
       "slug": "jamesportbaysuites",
@@ -1537,29 +1509,25 @@
       "url": "https://jamesportbaysuites.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 166,
+      "ms": 260,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "jcmlaw": {
       "slug": "jcmlaw",
       "name": "Jcmlaw",
       "url": "https://jcmlaw.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 221,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 1350,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "jladlercarpentry": {
       "slug": "jladlercarpentry",
@@ -1567,59 +1535,49 @@
       "url": "https://jladlercarpentry.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 296,
+      "ms": 399,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "jlhtherapy": {
       "slug": "jlhtherapy",
       "name": "JLH Therapy",
       "url": "https://jlhtherapy.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 140,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 742,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "jostvandyke": {
       "slug": "jostvandyke",
       "name": "Jostvandyke",
       "url": "https://jostvandyke.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 220,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 794,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "kennebunkbeachmaine": {
       "slug": "kennebunkbeachmaine",
       "name": "Kennebunk Beach Maine",
       "url": "https://kennebunkbeachmaine.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 168,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 357,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "kesslerusa": {
       "slug": "kesslerusa",
@@ -1627,14 +1585,13 @@
       "url": "https://kesslerusa.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 169,
+      "ms": 293,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "kingshousemotorhotel": {
       "slug": "kingshousemotorhotel",
@@ -1642,14 +1599,13 @@
       "url": "https://kingshousemotorhotel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 338,
+      "ms": 235,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "kmss-us": {
       "slug": "kmss-us",
@@ -1657,29 +1613,25 @@
       "url": "https://kmss-us.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 307,
+      "ms": 194,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "ktelderlaw": {
       "slug": "ktelderlaw",
       "name": "Kilbourne & Tully - Elder Law Offices",
       "url": "https://ktelderlaw.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 150,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 1488,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "liregentsprep": {
       "slug": "liregentsprep",
@@ -1687,14 +1639,13 @@
       "url": "https://liregentsprep.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 163,
+      "ms": 321,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "littlerichgirl": {
       "slug": "littlerichgirl",
@@ -1702,14 +1653,13 @@
       "url": "https://littlerichgirl.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 240,
+      "ms": 212,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "littlesurinn": {
       "slug": "littlesurinn",
@@ -1717,14 +1667,13 @@
       "url": "https://littlesurinn.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 205,
+      "ms": 270,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.553Z"
     },
     "lodgeatkennebunk": {
       "slug": "lodgeatkennebunk",
@@ -1732,14 +1681,13 @@
       "url": "https://lodgeatkennebunk.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 244,
+      "ms": 203,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "mannafishfarms": {
       "slug": "mannafishfarms",
@@ -1747,14 +1695,13 @@
       "url": "https://mannafishfarms.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 239,
+      "ms": 172,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "mannahamptonsrestaurant": {
       "slug": "mannahamptonsrestaurant",
@@ -1762,14 +1709,13 @@
       "url": "https://mannahamptonsrestaurant.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 361,
+      "ms": 192,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "mannaoceanfoundation": {
       "slug": "mannaoceanfoundation",
@@ -1777,14 +1723,13 @@
       "url": "https://mannaoceanfoundation.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 188,
+      "ms": 167,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "mannarestaurant": {
       "slug": "mannarestaurant",
@@ -1792,14 +1737,13 @@
       "url": "https://mannarestaurant.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 219,
+      "ms": 266,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "mannaseafoodblockchain": {
       "slug": "mannaseafoodblockchain",
@@ -1807,14 +1751,13 @@
       "url": "https://mannaseafoodblockchain.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 157,
+      "ms": 147,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "marinerresort": {
       "slug": "marinerresort",
@@ -1822,14 +1765,13 @@
       "url": "https://marinerresort.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 235,
+      "ms": 243,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "mbpoa": {
       "slug": "mbpoa",
@@ -1837,29 +1779,25 @@
       "url": "https://mbpoa.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 99,
+      "ms": 211,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "meadowviewhousebi": {
       "slug": "meadowviewhousebi",
       "name": "Meadowviewhousebi",
       "url": "https://meadowviewhousebi.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 124,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 3193,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "meetinghousemarina": {
       "slug": "meetinghousemarina",
@@ -1867,29 +1805,25 @@
       "url": "https://meetinghousemarina.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 139,
+      "ms": 259,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "metropolisdiner": {
       "slug": "metropolisdiner",
       "name": "Metropolisdiner",
       "url": "https://metropolisdiner.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 241,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 567,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "mistyharborresort": {
       "slug": "mistyharborresort",
@@ -1897,14 +1831,13 @@
       "url": "https://mistyharborresort.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 245,
+      "ms": 304,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "mondocreations": {
       "slug": "mondocreations",
@@ -1912,14 +1845,13 @@
       "url": "https://mondocreations.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 159,
+      "ms": 344,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "montaukhouserentals": {
       "slug": "montaukhouserentals",
@@ -1927,14 +1859,13 @@
       "url": "https://montaukhouserentals.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 158,
+      "ms": 381,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "montauklakeclub": {
       "slug": "montauklakeclub",
@@ -1942,14 +1873,13 @@
       "url": "https://montauklakeclub.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 136,
+      "ms": 362,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "montaukmanor": {
       "slug": "montaukmanor",
@@ -1957,14 +1887,13 @@
       "url": "https://montaukmanor.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 242,
+      "ms": 419,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "montauksoundview": {
       "slug": "montauksoundview",
@@ -1972,14 +1901,13 @@
       "url": "https://montauksoundview.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 133,
+      "ms": 323,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "moonstonelanding": {
       "slug": "moonstonelanding",
@@ -1987,14 +1915,13 @@
       "url": "https://moonstonelanding.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 154,
+      "ms": 310,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "mountnevishotel": {
       "slug": "mountnevishotel",
@@ -2002,14 +1929,13 @@
       "url": "https://mountnevishotel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 89,
+      "ms": 330,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "myoysterbi": {
       "slug": "myoysterbi",
@@ -2017,14 +1943,13 @@
       "url": "https://myoysterbi.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 159,
+      "ms": 345,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "natalestransport": {
       "slug": "natalestransport",
@@ -2032,14 +1957,13 @@
       "url": "https://natalestransport.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 185,
+      "ms": 418,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "newrochellept": {
       "slug": "newrochellept",
@@ -2047,14 +1971,13 @@
       "url": "https://newrochellept.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 194,
+      "ms": 419,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "newyorkcateringco": {
       "slug": "newyorkcateringco",
@@ -2062,14 +1985,13 @@
       "url": "https://newyorkcateringco.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 335,
+      "ms": 433,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "nfct": {
       "slug": "nfct",
@@ -2077,14 +1999,13 @@
       "url": "https://nfct.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 316,
+      "ms": 436,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "northforkcarwash": {
       "slug": "northforkcarwash",
@@ -2092,14 +2013,13 @@
       "url": "https://northforkcarwash.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 132,
+      "ms": 405,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "northharbormontauk": {
       "slug": "northharbormontauk",
@@ -2107,14 +2027,13 @@
       "url": "https://northharbormontauk.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 177,
+      "ms": 367,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "oceancliff1and2": {
       "slug": "oceancliff1and2",
@@ -2122,14 +2041,13 @@
       "url": "https://oceancliff1and2.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 171,
+      "ms": 391,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "oceanvistaresort": {
       "slug": "oceanvistaresort",
@@ -2138,25 +2056,22 @@
       "status": "live",
       "issues": [],
       "code": 200,
-      "ms": 7006,
+      "ms": 2144,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "oceanwoodsresort": {
       "slug": "oceanwoodsresort",
       "name": "Ocean Woods Resort",
       "url": "https://oceanwoodsresort.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 154,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 607,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "ogunquithotels": {
       "slug": "ogunquithotels",
@@ -2164,14 +2079,13 @@
       "url": "https://ogunquithotels.net",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 213,
+      "ms": 471,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "oldorchardbeachlodging": {
       "slug": "oldorchardbeachlodging",
@@ -2179,14 +2093,13 @@
       "url": "https://oldorchardbeachlodging.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 247,
+      "ms": 467,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "olympia-vt": {
       "slug": "olympia-vt",
@@ -2194,14 +2107,13 @@
       "url": "https://olympia-vt.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 188,
+      "ms": 503,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "onmontauk": {
       "slug": "onmontauk",
@@ -2209,14 +2121,13 @@
       "url": "https://onmontauk.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 183,
+      "ms": 503,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "onthebeachmotel": {
       "slug": "onthebeachmotel",
@@ -2224,14 +2135,13 @@
       "url": "https://onthebeachmotel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 181,
+      "ms": 542,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "oquossoccountrysuites": {
       "slug": "oquossoccountrysuites",
@@ -2239,14 +2149,13 @@
       "url": "https://oquossoccountrysuites.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 194,
+      "ms": 588,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "oshuckscatering": {
       "slug": "oshuckscatering",
@@ -2254,44 +2163,37 @@
       "url": "https://oshuckscatering.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 178,
+      "ms": 406,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "outeastmgmt": {
       "slug": "outeastmgmt",
       "name": "Out East Management",
       "url": "https://outeastmgmt.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 57,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 652,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "paintedrockdesigns": {
       "slug": "paintedrockdesigns",
       "name": "Paintedrockdesigns",
       "url": "https://paintedrockdesigns.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 155,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 951,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "paintedrockfloraldesigns": {
       "slug": "paintedrockfloraldesigns",
@@ -2299,29 +2201,25 @@
       "url": "https://paintedrockfloraldesigns.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 167,
+      "ms": 557,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "palmamiamibeach": {
       "slug": "palmamiamibeach",
       "name": "Palmamiamibeach",
       "url": "https://palmamiamibeach.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 142,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 706,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "papkeproperties": {
       "slug": "papkeproperties",
@@ -2329,14 +2227,13 @@
       "url": "https://papkeproperties.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 102,
+      "ms": 607,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.546Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "paradisevacationsuites": {
       "slug": "paradisevacationsuites",
@@ -2344,29 +2241,25 @@
       "url": "https://paradisevacationsuites.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 169,
+      "ms": 583,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "paragonct": {
       "slug": "paragonct",
       "name": "Paragonct",
       "url": "https://paragonct.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 84,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 3078,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "paynesharborviewinn": {
       "slug": "paynesharborviewinn",
@@ -2374,14 +2267,13 @@
       "url": "https://paynesharborviewinn.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 126,
+      "ms": 472,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "pcresortandclub": {
       "slug": "pcresortandclub",
@@ -2389,14 +2281,13 @@
       "url": "https://pcresortandclub.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 428,
+      "ms": 490,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "peaksandocean": {
       "slug": "peaksandocean",
@@ -2404,14 +2295,13 @@
       "url": "https://peaksandocean.ca",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 103,
+      "ms": 436,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "pelhambayhomecenter": {
       "slug": "pelhambayhomecenter",
@@ -2419,14 +2309,13 @@
       "url": "https://pelhambayhomecenter.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 192,
+      "ms": 345,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "pinkb": {
       "slug": "pinkb",
@@ -2434,14 +2323,13 @@
       "url": "https://pinkb.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 234,
+      "ms": 363,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "pinkpalmhotel": {
       "slug": "pinkpalmhotel",
@@ -2449,14 +2337,13 @@
       "url": "https://pinkpalmhotel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 121,
+      "ms": 368,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "pjspubnarragansett": {
       "slug": "pjspubnarragansett",
@@ -2464,14 +2351,13 @@
       "url": "https://pjspubnarragansett.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 140,
+      "ms": 288,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "pompetteflagstaff": {
       "slug": "pompetteflagstaff",
@@ -2479,14 +2365,13 @@
       "url": "https://pompetteflagstaff.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 177,
+      "ms": 270,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "portsofcallresort": {
       "slug": "portsofcallresort",
@@ -2494,14 +2379,13 @@
       "url": "https://portsofcallresort.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 208,
+      "ms": 672,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "portsofcallvillas": {
       "slug": "portsofcallvillas",
@@ -2509,14 +2393,13 @@
       "url": "https://portsofcallvillas.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 211,
+      "ms": 577,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "premier-flight": {
       "slug": "premier-flight",
@@ -2524,14 +2407,13 @@
       "url": "https://premier-flight.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 170,
+      "ms": 228,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "providenceoysterbar": {
       "slug": "providenceoysterbar",
@@ -2539,14 +2421,13 @@
       "url": "https://providenceoysterbar.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 210,
+      "ms": 252,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "quickstepmarine": {
       "slug": "quickstepmarine",
@@ -2554,14 +2435,13 @@
       "url": "https://quickstepmarine.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 172,
+      "ms": 231,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "redbarnhomemade": {
       "slug": "redbarnhomemade",
@@ -2569,14 +2449,13 @@
       "url": "https://redbarnhomemade.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 96,
+      "ms": 253,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "redsquirrellodge": {
       "slug": "redsquirrellodge",
@@ -2584,14 +2463,13 @@
       "url": "https://redsquirrellodge.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 69,
+      "ms": 227,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "rhumblinemaine": {
       "slug": "rhumblinemaine",
@@ -2599,14 +2477,13 @@
       "url": "https://rhumblinemaine.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 73,
+      "ms": 240,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "riomexicancafe": {
       "slug": "riomexicancafe",
@@ -2614,14 +2491,13 @@
       "url": "https://riomexicancafe.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 139,
+      "ms": 227,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "robertnewmanonline": {
       "slug": "robertnewmanonline",
@@ -2629,14 +2505,13 @@
       "url": "https://robertnewmanonline.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 112,
+      "ms": 231,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "roccosgiftcard": {
       "slug": "roccosgiftcard",
@@ -2647,10 +2522,10 @@
         "ENOTFOUND"
       ],
       "code": 0,
-      "ms": 30,
+      "ms": 178,
       "visual": null,
       "uptime_pct": 0,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "rosefarminn": {
       "slug": "rosefarminn",
@@ -2658,14 +2533,13 @@
       "url": "https://rosefarminn.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 155,
+      "ms": 238,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "royalatlantic": {
       "slug": "royalatlantic",
@@ -2673,29 +2547,25 @@
       "url": "https://royalatlantic.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 173,
+      "ms": 304,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "sandsoob": {
       "slug": "sandsoob",
       "name": "Sandsoob",
       "url": "https://sandsoob.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 136,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 2596,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "sbmotel": {
       "slug": "sbmotel",
@@ -2703,29 +2573,25 @@
       "url": "https://sbmotel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 183,
+      "ms": 253,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "seachambers": {
       "slug": "seachambers",
       "name": "Seachambers",
       "url": "https://seachambers.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 170,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 2677,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "searosesuites": {
       "slug": "searosesuites",
@@ -2733,14 +2599,13 @@
       "url": "https://searosesuites.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 116,
+      "ms": 285,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "seashellcapecod": {
       "slug": "seashellcapecod",
@@ -2748,14 +2613,13 @@
       "url": "https://seashellcapecod.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 209,
+      "ms": 315,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "seaviewmotel": {
       "slug": "seaviewmotel",
@@ -2763,29 +2627,25 @@
       "url": "https://seaviewmotel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 158,
+      "ms": 357,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "sebastiansbvi": {
       "slug": "sebastiansbvi",
       "name": "Sebastian's on the Beach",
       "url": "https://sebastiansbvi.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 230,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 1109,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "settcoffee": {
       "slug": "settcoffee",
@@ -2793,14 +2653,13 @@
       "url": "https://settcoffee.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 142,
+      "ms": 353,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "sharipharmachem": {
       "slug": "sharipharmachem",
@@ -2808,14 +2667,13 @@
       "url": "https://sharipharmachem.world",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 280,
+      "ms": 357,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "shawmont": {
       "slug": "shawmont",
@@ -2823,14 +2681,13 @@
       "url": "https://shawmont.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 284,
+      "ms": 316,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "sheffieldhousebi": {
       "slug": "sheffieldhousebi",
@@ -2838,14 +2695,13 @@
       "url": "https://sheffieldhousebi.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 209,
+      "ms": 274,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "shinnecocklobsterfactory": {
       "slug": "shinnecocklobsterfactory",
@@ -2853,29 +2709,25 @@
       "url": "https://shinnecocklobsterfactory.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 282,
+      "ms": 260,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.554Z"
     },
     "shoreroadmarina": {
       "slug": "shoreroadmarina",
       "name": "Shoreroadmarina",
       "url": "https://shoreroadmarina.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 186,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 532,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "shortlinelots": {
       "slug": "shortlinelots",
@@ -2883,29 +2735,25 @@
       "url": "https://shortlinelots.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 167,
+      "ms": 219,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "shuttersonthebanks": {
       "slug": "shuttersonthebanks",
       "name": "Shuttersonthebanks",
       "url": "https://shuttersonthebanks.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 204,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 253,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "skysqueegee": {
       "slug": "skysqueegee",
@@ -2913,29 +2761,25 @@
       "url": "https://skysqueegee.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 193,
+      "ms": 223,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "soleeast": {
       "slug": "soleeast",
       "name": "Soleeast",
       "url": "https://soleeast.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 248,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 1195,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "southamptoninn": {
       "slug": "southamptoninn",
@@ -2943,29 +2787,27 @@
       "url": "https://southamptoninn.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 104,
+      "ms": 227,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "southoldbeachmotel": {
       "slug": "southoldbeachmotel",
       "name": "Southold Beach Motel",
       "url": "https://southoldbeachmotel.com",
-      "status": "warning",
+      "status": "down",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "UND_ERR_CONNECT_TIMEOUT"
       ],
-      "code": 403,
-      "ms": 192,
+      "code": 0,
+      "ms": 10226,
       "visual": null,
-      "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "uptime_pct": 50,
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "springhousehotel": {
       "slug": "springhousehotel",
@@ -2973,14 +2815,13 @@
       "url": "https://springhousehotel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 147,
+      "ms": 741,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "stevenbofill": {
       "slug": "stevenbofill",
@@ -2988,14 +2829,13 @@
       "url": "https://stevenbofill.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 135,
+      "ms": 240,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "tanglwoodresorts": {
       "slug": "tanglwoodresorts",
@@ -3003,14 +2843,13 @@
       "url": "https://tanglwoodresorts.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 124,
+      "ms": 238,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "taracosta": {
       "slug": "taracosta",
@@ -3018,29 +2857,27 @@
       "url": "https://taracosta.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 174,
+      "ms": 214,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "terracecottagecolony": {
       "slug": "terracecottagecolony",
       "name": "Terrace Cottage Colony",
       "url": "https://terracecottagecolony.com",
-      "status": "warning",
+      "status": "down",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "ECONNRESET"
       ],
-      "code": 403,
-      "ms": 296,
+      "code": 0,
+      "ms": 442,
       "visual": null,
-      "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "uptime_pct": 50,
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "terrracebythesea": {
       "slug": "terrracebythesea",
@@ -3051,10 +2888,10 @@
         "ENOTFOUND"
       ],
       "code": 0,
-      "ms": 64,
+      "ms": 407,
       "visual": null,
       "uptime_pct": 0,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "theanchormotel": {
       "slug": "theanchormotel",
@@ -3062,14 +2899,13 @@
       "url": "https://theanchormotel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 185,
+      "ms": 464,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "theatlantichouse": {
       "slug": "theatlantichouse",
@@ -3077,14 +2913,13 @@
       "url": "https://theatlantichouse.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 160,
+      "ms": 581,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "theautobodyshopny": {
       "slug": "theautobodyshopny",
@@ -3092,14 +2927,13 @@
       "url": "https://theautobodyshopny.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 169,
+      "ms": 291,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "thebretongroup": {
       "slug": "thebretongroup",
@@ -3107,14 +2941,13 @@
       "url": "https://thebretongroup.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 130,
+      "ms": 307,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "theellsworthhotel": {
       "slug": "theellsworthhotel",
@@ -3122,14 +2955,13 @@
       "url": "https://theellsworthhotel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 199,
+      "ms": 310,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "thefortescape": {
       "slug": "thefortescape",
@@ -3140,10 +2972,10 @@
         "ENOTFOUND"
       ],
       "code": 0,
-      "ms": 93,
+      "ms": 140,
       "visual": null,
       "uptime_pct": 0,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "thegarlandscapecod": {
       "slug": "thegarlandscapecod",
@@ -3151,14 +2983,13 @@
       "url": "https://thegarlandscapecod.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 361,
+      "ms": 143,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "thegrandhotel": {
       "slug": "thegrandhotel",
@@ -3166,14 +2997,13 @@
       "url": "https://thegrandhotel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 132,
+      "ms": 148,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "thekaskadeshotel": {
       "slug": "thekaskadeshotel",
@@ -3181,14 +3011,13 @@
       "url": "https://thekaskadeshotel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 246,
+      "ms": 205,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "thekendrickhotel": {
       "slug": "thekendrickhotel",
@@ -3196,14 +3025,13 @@
       "url": "https://thekendrickhotel.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 136,
+      "ms": 206,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "theluxuryvacationguide": {
       "slug": "theluxuryvacationguide",
@@ -3211,14 +3039,13 @@
       "url": "https://theluxuryvacationguide.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 113,
+      "ms": 281,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "theneptuneinn": {
       "slug": "theneptuneinn",
@@ -3226,14 +3053,13 @@
       "url": "https://theneptuneinn.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 141,
+      "ms": 268,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "thenorthernpines": {
       "slug": "thenorthernpines",
@@ -3241,14 +3067,13 @@
       "url": "https://thenorthernpines.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 271,
+      "ms": 311,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "theredinn": {
       "slug": "theredinn",
@@ -3256,14 +3081,13 @@
       "url": "https://theredinn.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 149,
+      "ms": 255,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "theseastar": {
       "slug": "theseastar",
@@ -3271,14 +3095,13 @@
       "url": "https://theseastar.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 218,
+      "ms": 287,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "thesuccessiongroup": {
       "slug": "thesuccessiongroup",
@@ -3286,14 +3109,13 @@
       "url": "https://thesuccessiongroup.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 183,
+      "ms": 236,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "thesullivanhouse": {
       "slug": "thesullivanhouse",
@@ -3301,14 +3123,13 @@
       "url": "https://thesullivanhouse.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 152,
+      "ms": 295,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "thesurflodge": {
       "slug": "thesurflodge",
@@ -3316,14 +3137,13 @@
       "url": "https://thesurflodge.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 114,
+      "ms": 224,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "thetipperaryinn": {
       "slug": "thetipperaryinn",
@@ -3331,14 +3151,13 @@
       "url": "https://thetipperaryinn.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 222,
+      "ms": 285,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "thewanderlusteffect": {
       "slug": "thewanderlusteffect",
@@ -3346,14 +3165,13 @@
       "url": "https://thewanderlusteffect.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 78,
+      "ms": 231,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "treehouseexoticrentals": {
       "slug": "treehouseexoticrentals",
@@ -3361,14 +3179,13 @@
       "url": "https://treehouseexoticrentals.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 274,
+      "ms": 281,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "upperkeysrentals": {
       "slug": "upperkeysrentals",
@@ -3376,59 +3193,49 @@
       "url": "https://upperkeysrentals.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 132,
+      "ms": 195,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "vengolabs": {
       "slug": "vengolabs",
       "name": "Vengolabs",
       "url": "https://vengolabs.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 432,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 750,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "villasatsouthgate": {
       "slug": "villasatsouthgate",
       "name": "Villas at Southgate",
       "url": "https://villasatsouthgate.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 204,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 833,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "waveaerospace": {
       "slug": "waveaerospace",
       "name": "Wave Aerospace",
       "url": "https://waveaerospace.com",
-      "status": "warning",
-      "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
-      ],
-      "code": 403,
-      "ms": 181,
+      "status": "live",
+      "issues": [],
+      "code": 200,
+      "ms": 4506,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "wavecrestonocean": {
       "slug": "wavecrestonocean",
@@ -3436,14 +3243,13 @@
       "url": "https://wavecrestonocean.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 137,
+      "ms": 252,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "westlake-marina": {
       "slug": "westlake-marina",
@@ -3451,14 +3257,13 @@
       "url": "https://westlake-marina.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 270,
+      "ms": 364,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "windsongresidences": {
       "slug": "windsongresidences",
@@ -3466,14 +3271,13 @@
       "url": "https://windsongresidences.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 213,
+      "ms": 392,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "wrc-nyc": {
       "slug": "wrc-nyc",
@@ -3481,26 +3285,27 @@
       "url": "https://wrc-nyc.com",
       "status": "warning",
       "issues": [
-        "HTTP 403",
-        "Page body nearly empty"
+        "HTTP 403"
       ],
       "code": 403,
-      "ms": 141,
+      "ms": 340,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     },
     "yorkharborinn": {
       "slug": "yorkharborinn",
       "name": "York Harbor Inn",
       "url": "https://yorkharborinn.com",
-      "status": "live",
-      "issues": [],
-      "code": 200,
-      "ms": 5702,
+      "status": "warning",
+      "issues": [
+        "HTTP 403"
+      ],
+      "code": 403,
+      "ms": 337,
       "visual": null,
       "uptime_pct": 100,
-      "checked_at": "2026-09-07T04:30:03.547Z"
+      "checked_at": "2026-09-07T04:33:01.555Z"
     }
   }
 }
