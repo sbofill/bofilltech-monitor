@@ -85,12 +85,25 @@ async function httpCheck(site) {
 let browserP = null;
 function getBrowser() {
   if (!browserP) {
-    browserP = import('puppeteer').then(({ default: puppeteer }) => puppeteer.launch({
-      headless: 'shell',
-      args: ['--no-sandbox', '--disable-dev-shm-usage', '--hide-scrollbars'],
-    }));
+    browserP = (async () => {
+      const puppeteer = (await import('puppeteer-extra')).default;
+      const stealth = (await import('puppeteer-extra-plugin-stealth')).default;
+      puppeteer.use(stealth());
+      return puppeteer.launch({
+        headless: true,
+        args: ['--no-sandbox', '--disable-dev-shm-usage', '--hide-scrollbars', '--disable-blink-features=AutomationControlled'],
+      });
+    })();
   }
   return browserP;
+}
+
+const CHALLENGE_MARKERS = ['performing security verification', 'verify you are human', 'just a moment', 'checking your browser', 'verifying you are not a bot'];
+async function looksLikeChallenge(page) {
+  try {
+    const text = await page.evaluate(() => (document.body?.innerText || '').slice(0, 3000).toLowerCase());
+    return CHALLENGE_MARKERS.some(m => text.includes(m));
+  } catch { return false; }
 }
 
 async function screenshot(site) {
@@ -98,11 +111,22 @@ async function screenshot(site) {
   const page = await b.newPage();
   try {
     await page.setViewport({ width: S.screenshot_width, height: S.screenshot_height });
+    await page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36');
     await page.goto(site.url, { waitUntil: 'domcontentloaded', timeout: S.timeout_ms });
+    // Cloudflare managed challenges usually auto-clear in a real-looking browser: poll up to 16s
+    let challenged = await looksLikeChallenge(page);
+    if (challenged) {
+      for (let w = 0; w < 8 && challenged; w++) {
+        await new Promise(r => setTimeout(r, 2000));
+        challenged = await looksLikeChallenge(page);
+      }
+      if (!challenged) await new Promise(r => setTimeout(r, 2500)); // real page just arrived; let it settle
+    }
     await page.addStyleTag({ content: '*,*::before,*::after{animation:none!important;transition:none!important} video{visibility:hidden!important}' }).catch(() => {});
-    await new Promise(r => setTimeout(r, 3500)); // let heroes/fonts settle
+    await new Promise(r => setTimeout(r, 3000)); // heroes/fonts settle
+    const stillChallenged = challenged || await looksLikeChallenge(page);
     const png = await page.screenshot({ type: 'png' });
-    return Buffer.from(png);
+    return { png: Buffer.from(png), challenged: stillChallenged };
   } finally {
     await page.close().catch(() => {});
   }
@@ -165,9 +189,14 @@ const toShoot = results.filter(r => shotSet.has(r.idx) && r.status !== 'down');
 await pool(toShoot, SHOT_CONCURRENCY, async (r) => {
   const site = r.site;
   try {
-    const png = await screenshot(site);
+    const { png, challenged } = await screenshot(site);
     const basePath = path.join(baseDir, `${site.slug}.png`);
     const latestPath = path.join(shotsDir, `${site.slug}.png`);
+    if (challenged) {
+      // WAF wouldn't let the browser through: keep whatever real shot/baseline we have, record the block, no diff
+      r.visual = { challenge_blocked: true };
+      return;
+    }
     if (RESET_BASELINES || !fs.existsSync(basePath)) {
       fs.writeFileSync(basePath, png);
       fs.writeFileSync(latestPath, png);

@@ -6,6 +6,8 @@
     "puppeteer": "^23.11.1",
     "pixelmatch": "^6.0.0",
     "pngjs": "^7.0.0",
-    "nodemailer": "^6.9.16"
+    "nodemailer": "^6.9.16",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
   }
 }

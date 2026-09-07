@@ -141,7 +141,7 @@ function card(site, hist) {
          onerror="this.parentElement.innerHTML='<div class=&quot;screenshot-placeholder&quot;><span class=&quot;text-sm text-gray-400&quot;>Screenshot pending first run</span></div>'">`;
   const issues = site.issues?.length
     ? `<div class="px-4 pb-3 text-xs ${site.status === 'down' ? 'text-red-700' : 'text-amber-700'}">${site.issues.map(esc).join(' · ')}</div>` : '';
-  const diff = site.visual && !site.visual.baseline_reset
+  const diff = site.visual && site.visual.challenge_blocked ? null : site.visual && !site.visual.baseline_reset
     ? `<span class="tooltip-wrap">${site.visual.diff_pct}% visual diff<span class="tooltip-text">vs saved baseline screenshot</span></span>` : '';
 
   return `<div class="site-card card-${site.status} bg-white rounded-xl border border-gray-200 overflow-hidden">
@@ -162,7 +162,7 @@ function card(site, hist) {
     <div class="px-4 pb-3 pt-1 flex items-end justify-between gap-3">
       ${sparkline(hist)}
       <div class="text-[11px] text-gray-400 text-right">
-        ${site.bot_protected ? 'bot-protected · ' : ''}${site.uptime_pct != null ? site.uptime_pct + '% uptime · ' : ''}${diff ? diff + ' · ' : ''}checked ${ago(site.checked_at)}
+        ${site.visual && site.visual.challenge_blocked ? 'shot blocked by WAF · ' : ''}${site.bot_protected ? 'bot-protected · ' : ''}${site.uptime_pct != null ? site.uptime_pct + '% uptime · ' : ''}${diff ? diff + ' · ' : ''}checked ${ago(site.checked_at)}
       </div>
     </div>
   </div>`;
