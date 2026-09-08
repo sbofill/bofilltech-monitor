@@ -112,7 +112,8 @@ async function screenshot(site) {
   try {
     await page.setViewport({ width: S.screenshot_width, height: S.screenshot_height });
     await page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36');
-    await page.goto(site.url, { waitUntil: 'domcontentloaded', timeout: S.timeout_ms });
+    await page.goto(site.url, { waitUntil: 'networkidle2', timeout: S.timeout_ms })
+      .catch(() => {}); // slow third-party beacons shouldn't sink the capture; proceed with what loaded
     // Cloudflare managed challenges usually auto-clear in a real-looking browser: poll up to 16s
     let challenged = await looksLikeChallenge(page);
     if (challenged) {
@@ -122,8 +123,13 @@ async function screenshot(site) {
       }
       if (!challenged) await new Promise(r => setTimeout(r, 2500)); // real page just arrived; let it settle
     }
+    // wait for every <img> currently in the DOM to finish decoding (hero images are the big diff-flappers)
+    await Promise.race([
+      page.evaluate(() => Promise.all(Array.from(document.images).filter(i => !i.complete).map(i => new Promise(res => { i.onload = i.onerror = res; })))),
+      new Promise(r => setTimeout(r, 8000)),
+    ]).catch(() => {});
     await page.addStyleTag({ content: '*,*::before,*::after{animation:none!important;transition:none!important} video{visibility:hidden!important}' }).catch(() => {});
-    await new Promise(r => setTimeout(r, 3000)); // heroes/fonts settle
+    await new Promise(r => setTimeout(r, 3000)); // fonts/late JS settle
     const stillChallenged = challenged || await looksLikeChallenge(page);
     const png = await page.screenshot({ type: 'png' });
     return { png: Buffer.from(png), challenged: stillChallenged };
