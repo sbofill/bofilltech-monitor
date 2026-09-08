@@ -272,6 +272,7 @@ if (transitions.length) {
 
   const { SMTP_HOST, SMTP_USER, SMTP_PASS, ALERT_TO } = process.env;
   if (SMTP_HOST && SMTP_USER && SMTP_PASS && ALERT_TO) {
+    try {
     const nodemailer = (await import('nodemailer')).default;
     const tx = nodemailer.createTransport({ host: SMTP_HOST, port: 587, secure: false, auth: { user: SMTP_USER, pass: SMTP_PASS } });
     const lines = transitions.map(t =>
@@ -280,12 +281,15 @@ if (transitions.length) {
     ).join('\n\n');
     const worst = transitions.some(t => t.status === 'down') ? 'DOWN' : transitions.some(t => t.status === 'warning') ? 'Warning' : 'Recovered';
     await tx.sendMail({
-      from: `"VisualMonitor" <${SMTP_USER.includes('@') ? SMTP_USER : ALERT_TO}>`,
+      from: `"VisualMonitor" <${process.env.ALERT_FROM || ALERT_TO}>`,
       to: ALERT_TO,
       subject: `[VisualMonitor] ${worst}: ${transitions.map(t => t.name).join(', ')}`,
       text: `${lines}\n\nDashboard: https://bofilltech.github.io/bofilltech-monitor/\n${new Date().toISOString()}`,
     });
     console.log('Alert email sent.');
+    } catch (e) {
+      console.error('Alert email FAILED (monitoring unaffected):', e.message);
+    }
   } else {
     console.log('SMTP secrets not set — alert email skipped.');
   }
