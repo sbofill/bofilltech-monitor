@@ -115,11 +115,20 @@ function ago(iso) {
   return Math.round(s / 86400) + ' d ago';
 }
 
-function statCard(label, value, color) {
-  return `<div class="stat-card bg-white border border-gray-200 rounded-xl px-4 py-3">
+let activeFilter = 'all';
+function setFilter(f) {
+  activeFilter = (activeFilter === f) ? 'all' : f;   // click again to clear
+  renderCards();
+  renderStats();
+}
+function statCard(label, value, color, filter) {
+  const active = activeFilter === filter;
+  return `<button onclick="setFilter('${filter}')" aria-pressed="${active}"
+    class="stat-card text-left w-full bg-white border rounded-xl px-4 py-3 transition
+    ${active ? 'border-blue-500 ring-2 ring-blue-200 shadow-sm' : 'border-gray-200 hover:border-gray-300 hover:shadow-sm'}">
     <div class="text-2xl font-bold ${color}">${value}</div>
-    <div class="text-xs text-gray-500 mt-0.5">${label}</div>
-  </div>`;
+    <div class="text-xs text-gray-500 mt-0.5">${label}${active && filter !== 'all' ? ' · showing only' : ''}</div>
+  </button>`;
 }
 
 function sparkline(hist) {
@@ -168,6 +177,26 @@ function card(site, hist) {
   </div>`;
 }
 
+function renderStats() {
+  const sites = window.__sites || [];
+  const live = sites.filter(s => s.status === 'live').length;
+  const warn = sites.filter(s => s.status === 'warning').length;
+  const down = sites.filter(s => s.status === 'down').length;
+  $('stats').innerHTML =
+    statCard('Sites monitored', sites.length, 'text-gray-900', 'all') +
+    statCard('Live', live, 'text-green-600', 'live') +
+    statCard('Warnings', warn, warn ? 'text-amber-600' : 'text-gray-300', 'warning') +
+    statCard('Down', down, down ? 'text-red-600' : 'text-gray-300', 'down');
+}
+
+function renderCards() {
+  const sites = window.__sites || [];
+  const shown = activeFilter === 'all' ? sites : sites.filter(s => s.status === activeFilter);
+  $('grid').innerHTML = shown.length
+    ? shown.map(s => card(s, (window.__history || {})[s.slug])).join('')
+    : `<div class="col-span-full text-center py-16 text-gray-400 text-sm">No sites with this status right now — nice.</div>`;
+}
+
 async function loadData() {
   $('refresh-icon').classList.add('spinner');
   try {
@@ -182,18 +211,10 @@ async function loadData() {
     const sites = Object.values(data.sites);
     const order = { down: 0, warning: 1, live: 2 };
     sites.sort((a, b) => order[a.status] - order[b.status] || a.name.localeCompare(b.name));
+    window.__sites = sites;
+    window.__history = history;
 
-    const live = sites.filter(s => s.status === 'live').length;
-    const warn = sites.filter(s => s.status === 'warning').length;
-    const down = sites.filter(s => s.status === 'down').length;
-    const timed = sites.filter(s => s.ms);
-    const avg = timed.reduce((a, s) => a + s.ms, 0) / Math.max(1, timed.length);
-
-    $('stats').innerHTML =
-      statCard('Sites monitored', sites.length, 'text-gray-900') +
-      statCard('Live', live, 'text-green-600') +
-      statCard('Warnings', warn, warn ? 'text-amber-600' : 'text-gray-300') +
-      statCard('Down', down, down ? 'text-red-600' : 'text-gray-300');
+    renderStats();
 
     const bad = sites.filter(s => s.status !== 'live');
     if (bad.length) {
@@ -204,7 +225,7 @@ async function loadData() {
       $('alert-strip').classList.add('hidden');
     }
 
-    $('grid').innerHTML = sites.map(s => card(s, history[s.slug])).join('');
+    renderCards();
     $('empty').classList.add('hidden');
     $('last-updated').textContent = 'Last check ' + ago(data.generated_at) +
       ' · avg response ' + (avg / 1000).toFixed(1) + 's';
