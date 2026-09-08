@@ -8,11 +8,14 @@
   },
   "ignore": [
     "beaverstliquor.com",
+    "colonialshoresny.com",
+    "galemiamihotels.com",
     "galesouthbeach.com",
     "hamptonoceanresort.com",
     "kimbarrydesign.com",
     "newhampshiregeothermal.com",
     "plansandphotos.com",
+    "roccosgiftcard.com",
     "sbgair.com",
     "terrracebythesea.com",
     "whisperingwindsmotorhotel.com"
@@ -59,6 +62,11 @@
       "name": "Alegna Soap",
       "url": "https://alegnasoap.com",
       "visual_warn_pct": 40
+    },
+    {
+      "slug": "alerttest",
+      "name": "Alert Fire Drill",
+      "url": "https://alert-drill-not-real-bofilltech.com"
     },
     {
       "slug": "americanbeech",
@@ -335,12 +343,6 @@
       "url": "https://collinsirishpub.com"
     },
     {
-      "slug": "colonialshoresny",
-      "name": "Colonialshoresny",
-      "url": "https://colonialshoresny.com",
-      "visual_warn_pct": 40
-    },
-    {
       "slug": "congocoastal",
       "name": "Congocoastal",
       "url": "https://congocoastal.com"
@@ -485,12 +487,6 @@
       "slug": "galemiami",
       "name": "GaleMiami",
       "url": "https://galemiami.com"
-    },
-    {
-      "slug": "galemiamihotels",
-      "name": "GaleMiami",
-      "url": "https://galemiamihotels.com",
-      "visual_warn_pct": 40
     },
     {
       "slug": "gansevoorthospitality",
@@ -984,9 +980,9 @@
       "url": "https://robertnewmanonline.com"
     },
     {
-      "slug": "roccosgiftcard",
-      "name": "Roccosgiftcard",
-      "url": "https://roccosgiftcard.com"
+      "slug": "roccogiftcard",
+      "name": "Roccos Gift Card",
+      "url": "https://roccogiftcard.com"
     },
     {
       "slug": "rosefarminn",
@@ -1308,11 +1304,6 @@
       "name": "York Harbor Inn",
       "url": "https://yorkharborinn.com",
       "visual_warn_pct": 40
-    },
-    {
-      "slug": "alerttest",
-      "name": "Alert Fire Drill",
-      "url": "https://alert-drill-not-real-bofilltech.com"
     }
   ]
 }
