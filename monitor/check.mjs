@@ -90,6 +90,7 @@ function getBrowser() {
       const stealth = (await import('puppeteer-extra-plugin-stealth')).default;
       puppeteer.use(stealth());
       return puppeteer.launch({
+        protocolTimeout: 90000,
         headless: true,
         args: ['--no-sandbox', '--disable-dev-shm-usage', '--hide-scrollbars', '--disable-blink-features=AutomationControlled'],
       });
