@@ -260,7 +260,10 @@ fs.writeFileSync(path.join(dataDir, 'history.json'), JSON.stringify(history));
 // ---------- 5. Alerts on transitions ----------
 const transitions = final.filter(r => {
   const was = prev.sites?.[r.slug]?.status;
-  return was && was !== r.status && (r.status === 'down' || was === 'down');
+  if (!was || was === r.status) return false;
+  if (r.status === 'down' || was === 'down') return true;                       // outage + recovery
+  if (r.status === 'warning' && !r.issues.some(i => i.startsWith('First failure'))) return true; // real new warnings
+  return false;                                                                  // warning->live clears silently
 });
 
 if (transitions.length) {
