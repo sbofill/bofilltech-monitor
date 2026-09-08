@@ -227,6 +227,8 @@ async function loadData() {
 
     renderCards();
     $('empty').classList.add('hidden');
+    const timed = sites.filter(s => s.ms);
+    const avg = timed.reduce((a, s) => a + s.ms, 0) / Math.max(1, timed.length);
     $('last-updated').textContent = 'Last check ' + ago(data.generated_at) +
       ' · avg response ' + (avg / 1000).toFixed(1) + 's';
   } catch {
